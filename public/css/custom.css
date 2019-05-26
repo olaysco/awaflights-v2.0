@@ -193,3 +193,7 @@ ul.flight-search>li:hover{
 .has-error{
 	border: 1px solid #e02823 !important;
 }
+
+.paystack-container #test-mode-badge{
+	display: none !important;
+}

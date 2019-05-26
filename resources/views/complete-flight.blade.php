@@ -350,103 +350,29 @@ $j = 0;
 							</div>
 							<div class="booking-devider no-margin"></div>	
 							<h2>How would you like to pay?</h2>
-							
 							<div class="payment-wrapper">
-								<div class="payment-tabs">
-									<a href="#" class="active">Credit Card <span></span></a>
-									<a href="#">Paypal <span></span></a>
-								</div>
-								<div class="clear"></div>
-								<div class="payment-tabs-content">
-									<!-- // -->
-									<div class="payment-tab">
-										<div class="payment-type">
-											<label>Card Type:</label>
-											<div class="card-type"><img alt="" src="img/paymentt-01.png"></div>
-											<div class="card-type"><img alt="" src="img/paymentt-02.png"></div>
-											<div class="card-type"><img alt="" src="img/paymentt-03.png"></div>
-											<div class="clear"></div>
-										</div>
-										<div class="booking-form">
-											<div class="booking-form-i">
-												<label>Card Number:</label>
-												<div class="input"><input type="text" value=""></div>
-											</div>
-											<div class="booking-form-i">
-												<label>Card Holder Name:</label>
-												<div class="input"><input type="text" value=""></div>
-											</div>
-											<div class="booking-form-i">
-												<label>Expiration Date:</label>
-												<div class="card-expiration">
-												<select class="custom-select">
-													<option>Month</option>
-													<option>01</option>
-													<option>02</option>
-													<option>03</option>
-													<option>04</option>
-													<option>05</option>
-													<option>06</option>
-													<option>07</option>
-													<option>08</option>
-													<option>09</option>
-													<option>10</option>
-													<option>11</option>
-													<option>12</option>
-												</select>
-												</div>
-												<div class="card-expiration">
-												<select class="custom-select card-year">
-													<option>Year</option>
-													<option>2015</option>
-													<option>2016</option>
-													<option>2017</option>
-													<option>2018</option>
-													<option>2019</option>
-													<option>2020</option>
-												</select>
-												</div>
-												<div class="clear"></div>
-											</div>
-											<div class="booking-form-i">
-												<label>Card Indefication Number:</label>
-												<div class="inpt-comment">
-													<div class="inpt-comment-l">
-  														<div class="inpt-comment-lb">
-    														<div class="input"><input type="text" value=""></div>
-  														</div>
-  														<div class="clear"></div>
-													</div>
-												</div>
-												<div class="inpt-comment-r">
-  													<div class="padding">
-														<a href="#">What’s This?</a>
-  													</div>
-  													<div class="clear"></div>
-												</div>
-												<div class="clear"></div>
-											</div>
-										</div>
-										<div class="clear"></div>
-										<div class="checkbox">
-                							<label>
-                  								<input type="checkbox" value="" />
-                  								Im accept the rules <a href="#">Terms & Conditions</a>
-                							</label>
-              							</div> 
+									<div class="payment-tabs">
+										<a href="#" class="active">Credit Card <span></span></a>
+										<a href="#">Bank Deposit <span></span></a>
 									</div>
-									<!-- \\ -->
-									<!-- // -->
-									<div class="payment-tab">
-										<div class="payment-alert">
-											<span>You will be redirected to PayPal's website to securely complete your payment.</span>
-											<div class="payment-alert-close"><a href="#"><img alt="" src="img/alert-close.png"></a></div>
+									<div class="clear"></div>
+									<div class="payment-tabs-content" >
+										<!-- // -->
+										<div class="payment-tab" style="display:block;">
+												<div id="paystackEmbedContainer"></div>
+										</div>										<!-- \\ -->
+										<!-- // -->
+										<div class="payment-tab" style="display: none;">
+											<div class="payment-alert">
+												<span>Please note that direct bank payment is not currently available use <b>PAYSTACK</b>.</span>
+												<div class="payment-alert-close"><a href="#"><img alt="" src="img/alert-close.png"></a></div>
+											</div>
+										
 										</div>
-										<a href="#" class="paypal-btn">proceed to paypall</a>
+										<!-- \\ -->
 									</div>
-									<!-- \\ -->
 								</div>
-							</div>
+							
 							<div class="booking-complete">
 								<h2>Review and book your trip</h2>
 								<p>Kindly ensure that all the information you provided above is correct and valid for your flight processing. </p>	
@@ -590,3 +516,18 @@ $j = 0;
 </div>
 <!-- /main-cont -->
 @include('layout.footer')
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+
+
+<script>
+  PaystackPop.setup({
+   key: 'pk_test_88ebec70543462de18dee01e88d2109689e21061',
+   email: 'olaysoft@gmail.com',
+   amount: {{$selPricedItinerary->fareBreakDown->totalFareInKobo}},
+   container: 'paystackEmbedContainer',
+   callback: function(response){
+        alert('successfully paid. transaction ref is ' + response.reference);
+    },
+  });
+</script>

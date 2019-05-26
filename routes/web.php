@@ -28,6 +28,7 @@ Route::get('/hotels', function (){ return view('hotels');})->name('hotels');
 Route::get('/flights', function (){ return view('flights');})->name('flights');
 Route::get('/contact', function () { return view('contact-us'); })->name('contact');
 Route::post('fetch', 'FlightController@fetchAirport');
+Route::get('fetch', 'FlightController@fetchAirport');
 Route::post('/home', 'FlightController@processRequest');
 Route::post('/flights', 'FlightController@processRequest');
 Route::get('/complete', function(){ return view('complete-flight'); })->name('complete');

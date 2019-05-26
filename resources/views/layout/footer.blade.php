@@ -78,10 +78,8 @@
 			<div class="clear"></div>
 		</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  			crossorigin="anonymous"></script>
 	
+	<script src="{{asset('js/jquery.1.7.1.js')}}"></script>
 	<script src="{{asset('js/idangerous.swiper.js')}}"></script>
 	<script src="{{asset('js/slideInit.js')}}"></script>
 	<script src="{{asset('js/owl.carousel.min.js')}}"></script>
