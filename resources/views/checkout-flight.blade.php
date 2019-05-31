@@ -124,10 +124,23 @@ $infants = $pricedItinerary->fareBreakDown->numberOfInfant;
 												 </div>									
 											 
 												 <div class="payment-tab" style="display: none;">
-													 <div class="payment-alert">
-														 <span>Please note that direct bank payment is not currently available use <b>PAYSTACK</b>.</span>
-														 <div class="payment-alert-close"><a href="#"><img alt="" src="img/alert-close.png"></a></div>
-													 </div>
+														<div class="complete-info-i">
+																<div class="complete-inf">
+																		<img src="{{asset('img/gtb.jpg')}}"  style="max-width:100px; height:auto"/>
+																</div>
+																<p><b>Guarantee Trust Bank PLC (GTB)</b></p>
+																<p><b>Account Name:   </b> MAVERS TRAVELS AND TOURS</p>
+																<p><b>Account Number:  </b> 0470435646</p>
+														</div>
+														<div class="complete-info-i" style="margin-top:50px">
+															<div class="complete-inf">
+																	<img src="{{asset('img/fcmb.jpg')}}"  style="max-width:100px; height:auto"/>
+															</div>
+															<p><b>FIRST CITY MONUMENT BANK PLC</b></p>
+															<p><b>Account Name:   </b> MAVERS TRAVELS AND TOURS</p>
+															<p><b>Account Number:  </b> 6123028012</p>
+
+														</div>
 												 
 												 </div>
 											 
