@@ -20,7 +20,8 @@ Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
  /**
   * Flight Route
-  */
+*/
+Route::get('/checkout', function(){ return view('checkout-flight'); })->name('checkout');
 Route::get('/', function () { return view('home'); })->name('home');
 Route::get('/home', function () { return view('home'); })->name('home');
 Route::get('/about', function () { return view('about-us'); })->name('about');

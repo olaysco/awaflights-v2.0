@@ -103,6 +103,9 @@
             // In this example, we must bind 'change' event handlers to
             // our <select> elements, then interact with the mixer via
             // its .filter() and .sort() API methods.
+			$('.search-form').on('submit', function(e){
+				$('.srch-overlay').show();
+			});
 
             var containerEl = document.querySelector('.catalog-row');
             var stopFilter = document.querySelector('.stop-filter');
@@ -197,6 +200,7 @@
 			maxDate:('-12Y'),
 			changeMonth:true,
 			changeYear:true,
+			yearRange:("c-70:c+1")
 		});
 
 		$(document).on('click','#add_trip_field',function(){

@@ -8,6 +8,7 @@ if(null === session('selPricedItinerary') ){
 setlocale(LC_MONETARY, 'en_NG');
 
 
+
 function date_helper($datetime){
 		$date = new \DateTime(str_replace('/','-',$datetime));
 		$time = $date->format('H:i');
@@ -37,7 +38,8 @@ $j = 0;
     <div class="page-head">
       <div class="page-title">Air Ticket - <span>booking</span></div>
       <div class="breadcrumbs">
-        <a href="#">Home</a> / <a href="#">Flight</a> / <span>flight booking</span>
+				<a href="#">Home</a> / <a href="#">Flight</a> / <span>flight booking</span>
+			
       </div>
       <div class="clear"></div>
 		</div>
@@ -47,6 +49,7 @@ $j = 0;
 			<div class="sp-page-l">
   				<div class="sp-page-lb">
   					<div class="sp-page-p">
+								@include('layout.errors')
 						<form method="POST" action="/complete-booking" id="completeBookingForm">
 					{{ csrf_field() }}
 					<input name="numberOfTraveller" type="hidden" value="{{$totalTravellers}}">
@@ -59,7 +62,7 @@ $j = 0;
 									<h3>Adult {{$i}} Information</h3>
 											<div class="booking-form-i">
 													<label>First Name:</label>
-													<div class="input"><input type="text" value="" name="firstName{{$j}}" aria-required="true" required/></div>
+													<div class="input"><input type="text" value="{{old('firstname'.$j)}}" name="firstName{{$j}}" aria-required="true" required/></div>
 												</div>
 												<div class="booking-form-i">
 													<label>Last Name:</label>
@@ -348,20 +351,20 @@ $j = 0;
 								<div class="clear"></div>
 								</div>
 							</div>
-							<div class="booking-devider no-margin"></div>	
-							<h2>How would you like to pay?</h2>
-							<div class="payment-wrapper">
+							{{-- <div class="booking-devider no-margin"></div>	
+							 <h2>How would you like to pay?</h2>
+							<div class="payment-wrapper"> 
 									<div class="payment-tabs">
 										<a href="#" class="active">Credit Card <span></span></a>
 										<a href="#">Bank Deposit <span></span></a>
 									</div>
 									<div class="clear"></div>
 									<div class="payment-tabs-content" >
-										<!-- // -->
+										
 										<div class="payment-tab" style="display:block;">
 												<div id="paystackEmbedContainer"></div>
-										</div>										<!-- \\ -->
-										<!-- // -->
+										</div>									
+									
 										<div class="payment-tab" style="display: none;">
 											<div class="payment-alert">
 												<span>Please note that direct bank payment is not currently available use <b>PAYSTACK</b>.</span>
@@ -369,9 +372,9 @@ $j = 0;
 											</div>
 										
 										</div>
-										<!-- \\ -->
+									
 									</div>
-								</div>
+								</div> --}}
 							
 							<div class="booking-complete">
 								<h2>Review and book your trip</h2>
@@ -507,6 +510,52 @@ $j = 0;
 				<div class="h-help-email">supports@awaflights.com</div>
 			</div>
 			
+			<div class="h-reasons">
+				<div class="h-liked-lbl">Reasons to Book with us</div>
+				<div class="h-reasons-row">
+				<!-- // -->
+					<div class="reasons-i">
+					<div class="reasons-h">
+						<div class="reasons-l">
+							<i class="fas fa-headset about-fa"></i>
+						</div>
+						<div class="reasons-r">
+						<div class="reasons-rb">
+							<div class="reasons-p">
+								<div class="reasons-i-lbl">24/7 Customer support</div>
+								<p>We are always availble to answer your request day or night. we put our customers first.</p>
+							</div>
+						</div>
+						<br class="clear">
+						</div>
+					</div>
+					<div class="clear"></div>
+					</div>
+				<!-- \\ -->	
+				<!-- // -->
+					<div class="reasons-i">
+					<div class="reasons-h">
+						<div class="reasons-l">
+							<i class="fas fa-smile-wink about-fa"></i>
+						</div>
+						<div class="reasons-r">
+						<div class="reasons-rb">
+							<div class="reasons-p">
+								<div class="reasons-i-lbl">Smooth booking process</div>
+								<p>Our booking process is compared to non, as it is smooth and direct.</p>
+							</div>
+						</div>
+						<br class="clear">
+						</div>
+					</div>
+					<div class="clear"></div>
+					</div>
+				<!-- \\ -->	
+				<!-- // -->
+					
+				<!-- \\ -->				
+				</div>
+			</div>
 		</div>
 		<div class="clear"></div>
 	</div>
@@ -520,7 +569,7 @@ $j = 0;
 <script src="https://js.paystack.co/v1/inline.js"></script>
 
 
-<script>
+{{-- <script>
   PaystackPop.setup({
    key: 'pk_test_88ebec70543462de18dee01e88d2109689e21061',
    email: 'olaysoft@gmail.com',
@@ -530,4 +579,4 @@ $j = 0;
         alert('successfully paid. transaction ref is ' + response.reference);
     },
   });
-</script>
+</script> --}}

@@ -603,9 +603,9 @@ button.srch-btn {cursor: pointer; font-family: 'Montserrat'; font-size:11px; fon
 .catalog-i .offer-slider-devider {margin-right: 15px;}
 .offer-slider-img img {width:100%;}
 .catalog-head {background:#fff; padding: 9px 17px 9px 17px; margin-bottom: 25px;}
-.catalog-head label {font-family:'Raleway'; float: left; margin: 9px 15px 0px 0px; font-weight: 600; text-transform: uppercase; font-size: 11px; color:#3a4142;}
+.catalog-head label {font-family:'Raleway'; float: left; margin: 9px 15px 0px 0px; font-weight: 600; text-transform: uppercase; font-size: 12px; color:#3a4142;}
 .catalog-head .search-select {float: left; width:89px; margin-top: 1px; margin-right: 10px; border:1px solid #dedcdc;}
-.catalog-head .search-select select {background-image: url("../img/select-bg2.png"); padding-top: 9px; padding-bottom: 8px; font-size: 9px; color:#8a8a8a; background-position: 80% center; background-repeat: no-repeat;}
+.catalog-head .search-select select {background-image: url("../img/select-bg2.png"); padding-top: 9px; padding-bottom: 8px; font-size: 11px; color:#8a8a8a; background-position: 80% center; background-repeat: no-repeat;}
 .show-thumbs,.show-table,.show-list {margin-left: 5px; display: block; width: 29px; height: 29px; float: right;}
 .show-thumbs {background: url(../img/sort-a.png) left top no-repeat;}
 .show-table {background: url(../img/sort-b.png) left top no-repeat;}
@@ -1487,7 +1487,7 @@ nav ul,nav ul li {margin:0px;padding:0px;list-style:none;}
 .alt-logo a {display:table-cell; width:161px; height:112px; background:#f7f9fa; text-align:center; vertical-align:middle;}
 .alt-center-cp {padding:27px 0px 30px 18px; border-right:1px solid #ede7e1;}
 .alt-lbl {font-family:'Montserrat'; font-size:12px; font-weight:normal; text-transform:uppercase; margin-bottom:5px; color:#4c4c4c;}
-.alt-info {font-family:'Raleway'; font-weight:500; color:#747d7e; font-size:10px; text-transform:uppercase;}
+.alt-info {font-family:'Raleway'; font-weight:500; color:#747d7e; font-size:11px; text-transform:uppercase;}
 .alt-info b {font-family:'Open Sans'; font-weight:bold; color:#4a90a4; margin-right:6px;}
 .alt-devider {width:100%; height:1px; border-bottom:1px solid #ede7e1; margin:11px 0px 13px 0px;}
 .alt-data-i {line-height:12px; float:left;}
@@ -1557,7 +1557,7 @@ nav ul,nav ul li {margin:0px;padding:0px;list-style:none;}
 .h-help {background:#fff; padding:21px 20px 21px 20px; margin-bottom:28px;}
 .h-help-lbl {font-family:'Montserrat'; margin-bottom:8px; color:#4c4c4c; font-weight:normal; font-size:16px;}
 .h-help-lbl-a {font-family:'Raleway'; margin-bottom:15px; font-weight:500; font-size:11px; text-transform:uppercase; color:#747d7e;}
-.h-help-phone {font-family:'Open Sans'; font-size:20px; color:#4a90a4; background:url(../img/h-phone.png) left top no-repeat; padding:0px 0px 0px 23px; background-position:left 5px;}
+.h-help-phone {font-family:'Open Sans'; font-size:20px; color:#4a90a4;left top no-repeat; padding:0px 0px 0px 23px; background-position:left 5px;}
 .h-help-email {font-family:'Raleway'; margin:6px 0px 0px 23px; font-size:13px; color:#888888;}
 
 .h-liked {background:#fff; margin-bottom:28px; padding:21px 20px 21px 20px;}
@@ -1975,7 +1975,7 @@ nav ul,nav ul li {margin:0px;padding:0px;list-style:none;}
 
 .comlete-alert {border-top:1px solid #ebebeb; padding:18px 0px 18px 0px; margin:22px 0px 20px 0px; border-bottom:1px solid #ebebeb;}
 .comlete-alert-a {background:url(../img/icon-complete.png) left top no-repeat; background-position:left 4px; padding:0px 0px 0px 40px;}
-.comlete-alert-a b {display:block; font-weight:500; font-size:16px; color:#4a90a4;}
+.comlete-alert-a b {display:block; font-weight:500; font-size:16px; color:#41ad49}
 .comlete-alert-a span {font-size:13px; color:#626262;}
 .complete-info h2 {margin-bottom:18px;}
 .complete-info-l {float:left; width:138px; }

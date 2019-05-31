@@ -154,7 +154,7 @@ $airlineNames = [];
 														
 										if($options>=$originCount-1){
 												$output .= "</div></div><div class='flt-i-c'><div class='flt-i-padding'> <div class='flt-i-price'>$pricedItineraries->currencyCode $price</div>
-											<button type='submit' class='cat-list-btn'>Book now</button></div> </div><div class='clear'></div>$formClose</div>";
+											<button type='submit' class=' book-now-btn cat-list-btn'>Book now</button></div> </div><div class='clear'></div>$formClose</div>";
 											// if($outputShow === 'hide' && !$moreOptionsShown){
 											// 		$output .= "${moreOptionsDiv}";
 											// 		$moreOptionsShown = true;
@@ -171,7 +171,7 @@ $airlineNames = [];
 							<div class='alt-data-i alt-arrival'><b>Arrival</b><span>${arrTime}</span></div><div class='alt-data-i alt-time'><b>time</b>
 							<span>$totalDuration</span></div><div class='clear'></div></div> </div> <div class='clear'></div></div></div><div class='clear'></div>
 							</div><div class='clear'></div></div></div><div class='alt-flight-lr'> <div class='padding'><div class='flt-i-price'>$pricedItineraries->currencyCode $price</div>
-							<div class='flt-i-price-b'>avg/person</div><button class='cat-list-btn' type='submit'>Book now</button>  </div> <div class='clear'></div>
+							<div class='flt-i-price-b'>avg/person</div><button class='book-now-btn cat-list-btn' type='submit'>Book now</button>  </div> <div class='clear'></div>
 							</div><div class='clear'></div><div class='alt-details'>	$table<div class='clear'></div></div> $formClose</div>";
 							
 							// if($outputShow === 'hide' && !$moreOptionsShown){

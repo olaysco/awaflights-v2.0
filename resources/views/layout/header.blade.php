@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="{{asset('css/style.css')}}" />
 <link rel="stylesheet" href="{{asset('css/custom.css')}}" />
 <link rel="stylesheet" href="{{asset('fonts/FontAwesome/font-awesome.css')}}" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 <!-- Select 2 -->
 <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet">
 <!-- Int input -->
@@ -27,7 +28,12 @@
 </head>  
 <body>  
 <!-- // authorize // -->
-	<div class="overlay"></div>
+	<div class="srch-overlay">
+		<div class="loader">
+			<img src="{{asset('img/loader.gif')}}" />
+			<h1><i class="fa fa-search"> </i> Searching for the best flight </h1>
+		</div>		
+	</div>
 	<div class="autorize-popup">
 		<div class="autorize-tabs">
 			<a href="#" class="autorize-tab-a current">Sign in</a>

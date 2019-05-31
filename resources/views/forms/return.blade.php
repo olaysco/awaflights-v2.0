@@ -1,5 +1,5 @@
 <div id="return-form">
-		<form class="custom-form white-form marginbot-clear"  method="post" action="/home">
+		<form class="custom-form white-form marginbot-clear search-form"  method="post" action="/home">
 			
 			{{csrf_field() }}
 			<div class="page-search-p">

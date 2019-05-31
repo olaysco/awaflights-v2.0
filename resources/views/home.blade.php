@@ -5,6 +5,7 @@
 
 
 <!-- main-cont -->
+
 <div class="main-cont">
 <div class="">
 @include('layout.slider')
@@ -33,7 +34,7 @@
 					</div>
 					@include('layout.errors')
 						<div id="oneway-form">
-						<form class="custom-form white-form marginbot-clear" id="oneway-form" method="post" action="/home">
+						<form class="custom-form white-form marginbot-clear search-form" id="oneway-form" method="post" action="/home">
 							{{ csrf_field() }}
 						<div class="page-search-p">
 							
@@ -208,7 +209,7 @@
 						</div>
 
 						<div id="return-form">
-								<form class="custom-form white-form marginbot-clear" id="oneway-form" method="post" action="/home">
+								<form class="custom-form white-form marginbot-clear search-form" id="oneway-form" method="post" action="/home">
 									
 									{{csrf_field() }}
 									<div class="page-search-p">
@@ -390,7 +391,7 @@
 									<button class="add-btn btn-new" type="button" id="add_trip_field"><i class="fa fa-plus"> </i> add</button>	
 									<button class="minus-btn btn-new" type="button" id="minus_trip_field"><i class="fa fa-minus"> </i> remove</button>
 									</div>
-										<form class="custom-form white-form marginbot-clear" id="oneway-form" method="post" action="/home">
+										<form class="custom-form white-form marginbot-clear search-form" id="oneway-form" method="post" action="/home">
 									
 											{{csrf_field() }}
 											<input type="hidden" name="tripType" value="3" />

@@ -374,7 +374,7 @@ class FlightController extends Controller
 		if ($validate->fails()){
 			return redirect()->back()->withErrors($validate)->withInput();
 		}
-		$this->submitBookingRequest($request);
+		return $this->submitBookingRequest($request);
 		
 	}
 
@@ -457,10 +457,10 @@ class FlightController extends Controller
 		curl_setopt($this->ch, CURLOPT_ENCODING,  '');
 		$output = curl_exec($this->ch);
 		$this->err = curl_error($this->ch);
-	//	var_dump($output);
+		var_dump($output);
 //		echo json_encode($request_data);
 		if ($this->err) {
-		  echo json_encode(['data'=>['successful'=>false]]);
+			echo json_encode(['data'=>['successful'=>false]]);
 		} else {
 			$result = json_decode($output);
 			$success = $result->data->successful??'false';
@@ -475,19 +475,27 @@ class FlightController extends Controller
 				$flight->phoneNumber = $request->get('contactPhoneNumber');
 				$flight->flightDetails = json_encode($request_data);
 
-				$flight->save();
-				$email = $request->get('contactEmail');
-				Mail::send('emails.reserve', ['flight'=>$flight], function ($message) use ($email){
-					$message->from('reservations@awaflights.com', 'Awaflights');
-					$message->to($email)->cc('a.johnson@awaflights.com');
-					$message->subject('Flight Reservation info');
-			});
-				echo json_encode($result);
+
+				
+			// 	$email = $request->get('contactEmail');
+			// 	Mail::send('emails.reserve', ['flight'=>$flight], function ($message) use ($email){
+			// 		$message->from('reservations@awaflights.com', 'Awaflights');
+			// 		$message->to($email)->cc('a.johnson@awaflights.com');
+			// 		$message->subject('Flight Reservation info');
+			// });
+					$flight->save();
+					session(['flight'=>$flight]);
+					return redirect('/checkout')->with(compact('flight'));
 			}else{
-				echo json_encode($result);
-				//var_dump($result);
+				return redirect()->back()->with('data', json_decode($output))->withInput();
+				//var_dump(json_decode($output));
 			}
 		}
+	}
+
+	public function savePayment()
+	{
+
 	}
 
 	/**
