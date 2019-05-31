@@ -54,7 +54,7 @@ $infants = $pricedItinerary->fareBreakDown->numberOfInfant;
 						<div class="sp-page-lb">
 							<div class="sp-page-p">
 							  <div class="booking-left">
-								  <h2 style="text-transform:uppercase">Your flight booking is successful</h2>
+								  <h2 style="text-transform:uppercase; font-weight: bold;">Your flight booking is successful</h2>
 
 								  <div class="comlete-alert">
 									  <div class="comlete-alert-a">
@@ -66,11 +66,16 @@ $infants = $pricedItinerary->fareBreakDown->numberOfInfant;
 								  <div class="complete-info">
 									  <h2>Payment details</h2>
 									  <div class="complete-info-table">
-										  <div class="complete-info-i">
+										  <div class="complete-info-i" id="bookingNumber" style="display:none">
 											  <div class="complete-info-l">Booking Number:</div>
 											  <div class="complete-info-r">{{$flight->bookingNumber}}</div>
 											  <div class="clear"></div>
 										  </div>
+										  <div class="complete-info-i" id="bookingNumber">
+												<div class="complete-info-l">Payment Status:</div>
+												<div class="complete-info-r" id="paymentStatus">Not yet paid</div>
+												<div class="clear"></div>
+											</div>
 										  <div class="complete-info-i">
 											  <div class="complete-info-l">Payment Reference Number:</div>
 											  <div class="complete-info-r">{{$flight->referenceNumber}}</div>
@@ -92,8 +97,9 @@ $infants = $pricedItinerary->fareBreakDown->numberOfInfant;
 											  <div class="clear"></div>
 										  </div>
 									  </div>
+									  <div id="all-payment-wrapper">
 									  <div class="booking-devider no-margin"></div>	
-									  <h2>How would you like to pay?</h2>
+									  <h2  style="text-transform:uppercase; font-weight: bold;">How would you like to pay?</h2>
 									 <div class="payment-wrapper"> 
 											 <div class="payment-tabs">
 												 <a href="#" class="active">Credit Card <span></span></a>
@@ -127,9 +133,10 @@ $infants = $pricedItinerary->fareBreakDown->numberOfInfant;
 											 
 											 </div>
 										 </div>
+									  </div>
 									  
 									  <div class="complete-devider"></div>
-									  <h2>Your Contact Information</h2>
+									  <h2  style="text-transform:uppercase; font-weight: bold;"> Your Contact Information</h2>
 									  <div class="complete-info-table">
 										  <div class="complete-info-i">
 											  <div class="complete-info-l">First Name:</div>

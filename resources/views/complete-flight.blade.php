@@ -50,6 +50,18 @@ $j = 0;
   				<div class="sp-page-lb">
   					<div class="sp-page-p">
 								@include('layout.errors')
+								<?php
+								if(null !== session('success')){
+									if(session('success') === "false"){
+								?>
+								<div class="payment-alert" >
+										<span>An unknown error while booking this flight, try refreshing <b>or</b> booking another flight option.</span>
+										<div class="payment-alert-close"><a href="#"><img alt="" src="img/alert-close.png"></a></div>
+									</div>
+										<?php
+									}
+								}	
+								?>
 						<form method="POST" action="/complete-booking" id="completeBookingForm">
 					{{ csrf_field() }}
 					<input name="numberOfTraveller" type="hidden" value="{{$totalTravellers}}">

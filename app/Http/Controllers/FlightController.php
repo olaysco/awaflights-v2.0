@@ -460,7 +460,7 @@ class FlightController extends Controller
 		var_dump($output);
 //		echo json_encode($request_data);
 		if ($this->err) {
-			echo json_encode(['data'=>['successful'=>false]]);
+			return redirect()->back()->with('success', 'false')->withInput();
 		} else {
 			$result = json_decode($output);
 			$success = $result->data->successful??'false';
@@ -487,7 +487,7 @@ class FlightController extends Controller
 					session(['flight'=>$flight]);
 					return redirect('/checkout')->with(compact('flight'));
 			}else{
-				return redirect()->back()->with('data', json_decode($output))->withInput();
+				return redirect()->back()->with('success', 'false')->withInput();
 				//var_dump(json_decode($output));
 			}
 		}

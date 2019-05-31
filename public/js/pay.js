@@ -17,6 +17,7 @@ function payWithPaystack(email, phone, first_name, last_name, payment_ref, amoun
 		},
 		callback: function (response) {
 			alert('success. transaction is sucessful, Ref is '+ response);
+			updatePayment(payment_ref, response);
 		},
 		onClose: function () {
 			alert ('Transaction Cancelled');
@@ -24,5 +25,25 @@ function payWithPaystack(email, phone, first_name, last_name, payment_ref, amoun
 	});	
 
 	handler.openIframe();
+}
+
+function updatePayment(payment_ref, transaction_ref)
+{
+	$.ajax({
+		headers:{
+			'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')
+		},
+		url:"{{ 'updatePayment' }}",
+		method:"POST",
+		data: {'referenceNumber':payment_ref, 'transactionReference':transaction_ref},
+		success: function(data){
+			console.log('data');
+			if(data.status === 'status') {
+				$('#paymentStatus').text('paid');
+				$('#bookingNumber').show();
+				$('#all-payment-wrapper').hide();
+			}
+		}
+		});
 }
 
