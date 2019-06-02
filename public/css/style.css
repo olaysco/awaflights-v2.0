@@ -1037,7 +1037,7 @@ nav ul,nav ul li {margin:0px;padding:0px;list-style:none;}
 }
 .footer-a .section:last-child {
 	float:right;
-	width:254px;
+	width: 400px;
 }
 .footer-lbl {
 	font-size:14px;
@@ -1208,7 +1208,7 @@ nav ul,nav ul li {margin:0px;padding:0px;list-style:none;}
 
 .footer-b {
 	height:52px;
-	background:#000000;
+	background: #d2183b;
 	color:#fff;
 }
 .footer-left {

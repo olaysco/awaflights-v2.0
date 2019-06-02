@@ -1,3 +1,7 @@
+body{
+	max-width: 100% !important;
+	overflow-x: hidden;
+}
 .page-search.full-width-search{
 	margin-top: -366px;
 }

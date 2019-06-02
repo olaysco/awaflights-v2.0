@@ -45,10 +45,10 @@
 			<div class="section">
 				<div class="footer-lbl">Twitter widget</div>
 				<div class="twitter-wiget">
-					<div id="twitter-feed"></div>
+					<div id="twitter-feed"><a class="twitter-timeline" data-width="400" data-height="281" data-link-color="#d2183b" href="https://twitter.com/HORLLAYSCO?ref_src=twsrc%5Etfw">Tweets by HORLLAYSCO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 				</div>
 			</div>
-			<div class="section">
+			{{-- <div class="section">
 				<div class="footer-lbl">newsletter sign up</div>
 				<div class="footer-subscribe">
 					<div class="footer-subscribe-a">
@@ -56,7 +56,7 @@
 					</div>
 				</div>
 				<button class="footer-subscribe-btn">Sign up</button>
-			</div>
+			</div> --}}
 		</div>
 		<div class="clear"></div>
 	</footer>
@@ -90,7 +90,7 @@
 		<!-- intelinput JS -->
 		<script src="{{asset('js/intltelinput/intlTelInput.min.js')}}"></script>
 	{{-- <script src="{{asset('js/mix.js')}}"></script> --}}
-	<script type="text/javascript" src="{{asset('js/twitterfeed.js')}}"></script>
+	{{-- <script type="text/javascript" src="{{asset('js/twitterfeed.js')}}"></script> --}}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
 	
 	<script>
