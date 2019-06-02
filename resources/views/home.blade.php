@@ -1064,9 +1064,9 @@
   </div> --}}
   
   <div class="partners fly-in">
-    <a href="#"><img alt="" src="img/amadeus.png" /></a>
-	<a href="#"><img alt="" src="img/paystack.png" /></a>
-	<a href="#"><img alt="" src="img/travelbeta.png" /></a>
+    <a href="#"><img alt="" src="img/amadeus.png" alt="amadeus" /></a>
+	<a href="#"><img alt="" src="img/paystack.png" alt="paystack"/></a>
+	<a href="#"><img alt="" src="img/mavers.png" alt="mavers"/></a>
 	<!-- amadeus -->
 	<!-- paystack -->
 	<!-- travelbeta -->

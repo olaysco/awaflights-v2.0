@@ -45,7 +45,7 @@
 			<div class="section">
 				<div class="footer-lbl">Twitter widget</div>
 				<div class="twitter-wiget">
-					<div id="twitter-feed"><a class="twitter-timeline" data-width="400" data-height="281" data-link-color="#d2183b" href="https://twitter.com/HORLLAYSCO?ref_src=twsrc%5Etfw">Tweets by HORLLAYSCO</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+					<div id="twitter-feed"><a class="twitter-timeline" data-width="400" data-height="281" data-link-color="#d2183b" href="https://twitter.com/AwaFlights?ref_src=twsrc%5Etfw">Tweets by AwaFlights</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 				</div>
 			</div>
 			{{-- <div class="section">

@@ -202,16 +202,16 @@ ul.flight-search>li:hover{
 	display: none !important;
 }
 .book-now-btn.cat-list-btn {
-	background:#ff7200; 
+	background:#d2183b; 
 	border:none; 
 	color:#fff;
 	transition: 1s linear;
 	cursor: pointer;
 }
 .cat-list-btn:hover {
-	color:#ff7200;
+	color:#d2183b;
 	background-color: #fff;
-	border: 1px solid #ff7200;
+	border: 1px solid #d2183b;
 }
 .srch-overlay{
 	background-color: #fff;
@@ -246,7 +246,7 @@ ul.flight-search>li:hover{
 }
 .about-fa{
 	font-size: 32px;
-	color: #ff7200;
+	color: #d2183b;
 }
 .payment_button{
 	margin-top: 20px;
