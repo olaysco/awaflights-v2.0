@@ -3,43 +3,39 @@
 		<div class="wrapper-padding">
 			<div class="section">
 				<div class="footer-lbl">Get In Touch</div>
-				<div class="footer-adress">Address: 58911 Lepzig Hore,<br />85000 Vienna, Austria</div>
-				<div class="footer-phones">Telephones: +1 777 55-32-21</div>
-				<div class="footer-email">E-mail: contacts@miracle.com</div>
-				<div class="footer-skype">Skype: angelotours</div>
+				<div class="footer-adress">28, Alhaji street,<br />Aribila Odongunayan, Ikorodu<br /> Lagos state, Nigeria.</div>
+				<div class="footer-phones">+2348120252353,<br />+2348117503583</div>
+				<div class="footer-email">info@awaflights.com</div>
 			</div>
 			<div class="section">
 				<div class="footer-lbl">Featured deals</div>
 				<div class="footer-tours">
 				<!-- // -->
 				<div class="footer-tour">
-					<div class="footer-tour-l"><a href="#"><img alt="" src="img/f-tour-01.jpg" /></a></div>
+					<div class="footer-tour-l"><img alt="" src="img/f-tour-01.jpg" /></div>
 					<div class="footer-tour-r">
 						<div class="footer-tour-a">amsterdam tour</div>
 						<div class="footer-tour-b">location: netherlands</div>
-						<div class="footer-tour-c">800$</div>
 					</div>
 					<div class="clear"></div>
 				</div>
 				<!-- \\ -->
 				<!-- // -->
 				<div class="footer-tour">
-					<div class="footer-tour-l"><a href="#"><img alt="" src="img/f-tour-02.jpg" /></a></div>
+					<div class="footer-tour-l"><img alt="" src="img/f-tour-02.jpg" /></div>
 					<div class="footer-tour-r">
 						<div class="footer-tour-a">Kiev tour</div>
 						<div class="footer-tour-b">location: ukraine</div>
-						<div class="footer-tour-c">550$</div>
 					</div>
 					<div class="clear"></div>
 				</div>
 				<!-- \\ -->			
 				<!-- // -->
 				<div class="footer-tour">
-					<div class="footer-tour-l"><a href="#"><img alt="" src="img/f-tour-03.jpg" /></a></div>
+					<div class="footer-tour-l"><img alt="" src="img/f-tour-03.jpg" /></div>
 					<div class="footer-tour-r">
 						<div class="footer-tour-a">vienna tour</div>
 						<div class="footer-tour-b">location: austria</div>
-						<div class="footer-tour-c">940$</div>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -67,13 +63,11 @@
 	
 	<footer class="footer-b">
 		<div class="wrapper-padding">
-			<div class="footer-left">© Copyright 2015 by weblionmedia. All rights reserved.</div>
+			<div class="footer-left">© Copyright 2019 by Awaflights. All rights reserved.</div>
 			<div class="footer-social">
-				<a href="#" class="footer-twitter"></a>
-				<a href="#" class="footer-facebook"></a>
-				<a href="#" class="footer-vimeo"></a>
-				<a href="#" class="footer-pinterest"></a>
-				<a href="#" class="footer-instagram"></a>
+				<a href="https://www.twitter.com/awaflights" class="footer-twitter"></a>
+				<a href="https://www.facebook.com/awaflights" class="footer-facebook"></a>
+				<a href="https://www.instagram.com/awaflights" class="footer-instagram"></a>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -111,7 +105,9 @@
             var stopFilter = document.querySelector('.stop-filter');
             var priceSort = document.querySelector('.price-sort');
 
-            var mixer = mixitup(containerEl);
+			var mixer = mixitup(containerEl);
+			
+			mixer.sort('fare:asc');
 
             stopFilter.addEventListener('change', function() {
                 var selector = stopFilter.value;
@@ -121,7 +117,7 @@
 
             priceSort.addEventListener('change', function() {
                 var order = priceSort.value;
-
+				console.log(order);
                 mixer.sort(order);
 			});
 			var checkboxGroup = document.querySelector('.checkbox-group');

@@ -915,8 +915,8 @@
 		<div class="wrapper-padding-a">
 			<div class="mp-popular popular-destinations">
 				<header class="fly-in">
-					<b>Popular Destinations</b>
-					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+					<b style="font-weight:bold;">Popular Destinations</b>
+					
 				</header>
 				
 				<div class="fly-in mp-popular-row" >
@@ -931,7 +931,7 @@
 							<div class="offer-slider-txt">
 								<div class="offer-slider-link"><a href="#">Paris, france</a></div>
 								<div class="offer-slider-l">
-									<div class="offer-slider-location">11 NOV 2014 - 22 NOV 2014</div>
+									<div class="offer-slider-location">11 NOV 2019 - 22 NOV 2019</div>
 									<nav class="stars">
 										<ul>
 											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
@@ -944,8 +944,8 @@
 									</nav>
 								</div>
 								<div class="offer-slider-r align-right">
-									<b>450$</b>
-									<span>price</span>
+									{{-- <b>450$</b>
+									<span>price</span> --}}
 								</div>
 								<div class="offer-slider-devider"></div>								
 								<div class="clear"></div>
@@ -963,7 +963,7 @@
 							<div class="offer-slider-txt">
 								<div class="offer-slider-link"><a href="#">amsterdam, netherlands</a></div>
 								<div class="offer-slider-l">
-									<div class="offer-slider-location">11 NOV 2014 - 22 NOV 2014</div>
+									<div class="offer-slider-location">11 NOV 2019 - 22 NOV 2019</div>
 									<nav class="stars">
 										<ul>
 											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
@@ -976,8 +976,8 @@
 									</nav>
 								</div>
 								<div class="offer-slider-r align-right">
-									<b>756$</b>
-									<span>price</span>
+									{{-- <b>756$</b>
+									<span>price</span> --}}
 								</div>
 								<div class="offer-slider-devider"></div>								
 								<div class="clear"></div>
@@ -995,7 +995,7 @@
 							<div class="offer-slider-txt">
 								<div class="offer-slider-link"><a href="#">london, england</a></div>
 								<div class="offer-slider-l">
-									<div class="offer-slider-location">11 NOV 2014 - 22 NOV 2014</div>
+									<div class="offer-slider-location">11 NOV 2019 - 22 NOV 2019</div>
 									<nav class="stars">
 										<ul>
 											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
@@ -1008,8 +1008,7 @@
 									</nav>
 								</div>
 								<div class="offer-slider-r align-right">
-									<b>1200$</b>
-									<span>price</span>
+									
 								</div>
 								<div class="offer-slider-devider"></div>								
 								<div class="clear"></div>
@@ -1019,35 +1018,42 @@
 				</div>
 				<div class="clear"></div>						
 			</div>
-
-			<div class="mp-popular">
+</div>
+		<div class="our-travel-agency">
+			<div class="mp-popular"  >
 				<header class="fly-in">
-					<b>Our travel Agency</b>
-					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+					<b style="color:#fff">Why book with Awaflights?</b>
 				</header>
 				<div class="fly-in advantages-row">
 					<div class="advantages-i">
-						<div class="advantages-a"><img alt="" src="img/adv-01.png" /></div>
-						<div class="advantages-b">we love our clients</div>
-						<div class="advantages-c">Perspiciatis unde omnis iste natus doxes sit voluptatem accusantium doloremque la dantiumeaque ipsa.</div>
+						<div class="advantages-a"><i class="fa fa-search icon-circle icon-mandy fa-2x icon-search"></i></div>
+						<div class="advantages-b">Search/Find</div>
+						<div class="advantages-c">
+							Find the best deals and save money on your Flights and Hotel around the world
+							.</div>
 					</div>
 					<div class="advantages-i">
-						<div class="advantages-a"><img alt="" src="img/adv-02.png" /></div>
-						<div class="advantages-b">brilliant prices</div>
-						<div class="advantages-c">Perspiciatis unde omnis iste natus doxes sit voluptatem accusantium doloremque la dantiumeaque ipsa.</div>
+						<div class="advantages-a"><i class="fa fa-check icon-circle icon-primary fa-2x icon-search"></i></div>
+						<div class="advantages-b">Choose</div>
+						<div class="advantages-c">
+							Select from our cutting edge deals that won’t dig deep into your pockets
+							.</div>
 					</div>
 					<div class="advantages-i">
-						<div class="advantages-a"><img alt="" src="img/adv-03.png" /></div>
-						<div class="advantages-b">many different tours</div>
-						<div class="advantages-c">Perspiciatis unde omnis iste natus doxes sit voluptatem accusantium doloremque la dantiumeaque ipsa.</div>
+						<div class="advantages-a"><i class="fa fa-plane icon-circle icon-picton fa-2x icon-buy"></i></div>
+						<div class="advantages-b">Buy & Travel</div>
+						<div class="advantages-c">
+							Paying for your chosen deals is no more a rocket science. Easy and seamless
+							.</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
+
+		<!-- </div> -->
 	</div>
 
-  <div style="background:url(img/in2_popular.jpg) center top no-repeat;" class="last-order fly-in">
+  {{-- <div style="background:url(img/in2_popular.jpg) center top no-repeat;" class="last-order fly-in">
     <div class="last-order-content">
       <div class="last-order-a fly-in">Ropular Deal</div>
       <div class="last-order-b fly-in">Grand hotel - london, england</div>
@@ -1055,15 +1061,15 @@
       <div class="last-order-d fly-in">300$</div>
       <a href="#" class="last-order-btn fly-in">Book now</a>
     </div>
-  </div>
+  </div> --}}
   
   <div class="partners fly-in">
-    <a href="#"><img alt="" src="img/partner-01.png" /></a>
-    <a href="#"><img alt="" src="img/partner-02.png" /></a>
-    <a href="#"><img alt="" src="img/partner-03.png" /></a>
-    <a href="#"><img alt="" src="img/partner-04.png" /></a>
-    <a href="#"><img alt="" src="img/partner-05.png" /></a>
-    <a href="#"><img alt="" src="img/partner-06.png" /></a>
+    <a href="#"><img alt="" src="img/amadeus.png" /></a>
+	<a href="#"><img alt="" src="img/paystack.png" /></a>
+	<a href="#"><img alt="" src="img/travelbeta.png" /></a>
+	<!-- amadeus -->
+	<!-- paystack -->
+	<!-- travelbeta -->
   </div>
 
 	<div class="mp-offesr no-margin">
@@ -1071,7 +1077,7 @@
 			<div class="offer-slider duble-margin">
 				<header class="fly-in page-lbl">
 					<div class="offer-slider-lbl">We are Offering the hottest offers</div>
-					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
+					
 				</header>
 				<div class="fly-in offer-slider-c">
 					<div id="offers-a" class="owl-slider">
@@ -1099,8 +1105,7 @@
 									</nav>
 								</div>
 								<div class="offer-slider-r">
-									<b>756$</b>
-									<span>avg/night</span>
+									
 								</div>
 								<div class="offer-slider-devider"></div>								
 								<div class="clear"></div>
@@ -1131,8 +1136,7 @@
 									</nav>
 								</div>
 								<div class="offer-slider-r">
-									<b>900$</b>
-									<span>avg/night</span>
+									
 								</div>
 								<div class="offer-slider-devider"></div>								
 								<div class="clear"></div>
@@ -1163,8 +1167,7 @@
 									</nav>
 								</div>
 								<div class="offer-slider-r">
-									<b>850$</b>
-									<span>avg/night</span>
+									
 								</div>
 								<div class="offer-slider-devider"></div>								
 								<div class="clear"></div>
@@ -1195,8 +1198,8 @@
 									</nav>
 								</div>
 								<div class="offer-slider-r">
-									<b>630$</b>
-									<span>avg/night</span>
+									{{-- <b>630$</b>
+									<span>avg/night</span> --}}
 								</div>
 								<div class="offer-slider-devider"></div>								
 								<div class="clear"></div>
@@ -1227,8 +1230,8 @@
 									</nav>
 								</div>
 								<div class="offer-slider-r">
-									<b>756$</b>
-									<span>avg/night</span>
+									{{-- <b>756$</b>
+									<span>avg/night</span> --}}
 								</div>
 								<div class="offer-slider-devider"></div>								
 								<div class="clear"></div>
@@ -1259,8 +1262,8 @@
 									</nav>
 								</div>
 								<div class="offer-slider-r">
-									<b>900$</b>
-									<span>avg/night</span>
+									{{-- <b>900$</b>
+									<span>avg/night</span> --}}
 								</div>
 								<div class="offer-slider-devider"></div>								
 								<div class="clear"></div>
@@ -1291,8 +1294,8 @@
 									</nav>
 								</div>
 								<div class="offer-slider-r">
-									<b>850$</b>
-									<span>avg/night</span>
+									{{-- <b>850$</b>
+									<span>avg/night</span> --}}
 								</div>
 								<div class="offer-slider-devider"></div>								
 								<div class="clear"></div>
@@ -1323,8 +1326,8 @@
 									</nav>
 								</div>
 								<div class="offer-slider-r">
-									<b>630$</b>
-									<span>avg/night</span>
+									{{-- <b>630$</b>
+									<span>avg/night</span> --}}
 								</div>
 								<div class="offer-slider-devider"></div>								
 								<div class="clear"></div>
@@ -1338,35 +1341,7 @@
 			</div>
 		</div>
     
-    <div class="testimonials">
     
-      <div class="testimonials-lbl fly-in">what our client say</div>
-      <div class="testimonials-lbl-a fly-in">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</div>  
-      
-      <div class="testimonials-holder fly-in">
-      	<div id="testimonials-slider">
-      	<!-- // -->
-      	<div class="testimonials-i">
-        	<div class="testimonials-a"><img alt="" src="img/testimonial.gif" /></div>
-        	<div class="testimonials-b">"Qerspeciatis unde omnis iste natus doxes sit voluptatem accusantium doloremque laudantium, totam aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto"</div>
-        	<div class="testimonials-c">
-          	<nav>
-            	<ul>
-              	<li><a href="#"><img alt="" src="img/ts-star.png" /></a></li>
-              	<li><a href="#"><img alt="" src="img/ts-star.png" /></a></li>
-              	<li><a href="#"><img alt="" src="img/ts-star.png" /></a></li>
-              	<li><a href="#"><img alt="" src="img/ts-star.png" /></a></li>
-              	<li><a href="#"><img alt="" src="img/ts-star.png" /></a></li>
-            	</ul>
-          	</nav>
-        	</div>
-        	<div class="testimonials-d">Albert Dowson, Company Director</div>
-      	</div>
-      	<!-- \\ -->
-      	</div>
-      </div>
-      
-    </div>
       	
   </div>
 

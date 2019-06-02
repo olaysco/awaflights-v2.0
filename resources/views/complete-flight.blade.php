@@ -517,12 +517,12 @@ $j = 0;
 			
 			<div class="h-help">
 				<div class="h-help-lbl">Need Awaflights help?</div>
-				<div class="h-help-lbl-a">We would be happy to help you!</div>
-				<div class="h-help-phone">0811-337-6030</div>
-				<div class="h-help-email">supports@awaflights.com</div>
+				<div class="h-help-lbl-a">We are always availble to answer your request day or night. we put our customers first.</div>
+				<div class="h-help-phone"><i class="fa fa-phone about-fa"> </i> +2348120252353</div>
+				<div class="h-help-email">info@awaflights.com</div>
 			</div>
 			
-			<div class="h-reasons">
+			{{-- <div class="h-reasons">
 				<div class="h-liked-lbl">Reasons to Book with us</div>
 				<div class="h-reasons-row">
 				<!-- // -->
@@ -567,7 +567,7 @@ $j = 0;
 					
 				<!-- \\ -->				
 				</div>
-			</div>
+			</div> --}}
 		</div>
 		<div class="clear"></div>
 	</div>

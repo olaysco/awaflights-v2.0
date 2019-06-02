@@ -56,7 +56,7 @@ button.btn-new {
     width: 50px;
     height: 24px;
     padding-top: 10px;
-    background: #980703;
+    background: #d2183b;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -107,8 +107,8 @@ button.btn-new {
   
   /* When the radio button is checked, add a blue background */
   .container-radio input:checked ~ .checkmark {
-	background-color: #823838;
-  }
+	background-color: #d2183b;
+	}
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
   .checkmark:after {
@@ -140,7 +140,7 @@ ul.flight-search>li{
 	border-bottom-right-radius: 2px;
 	padding-bottom:8px; 
 	text-align:left; 
-	font-family: 'Raleway';
+	font-family: 'Lato', sans-serif;
 	padding-top:4px;
 	padding-left:2px;
 }
@@ -149,7 +149,7 @@ ul.flight-search>li:last-child{
 	padding-bottom:0px; 
 }
 ul.flight-search>li:hover{
-	background-color: #e02923b2;
+	background-color: #d2183bcc;
 	color:#fff;
 }
 .srch-tab-left, .srch-tab-right{
@@ -235,7 +235,7 @@ ul.flight-search>li:hover{
 	border: 0;
 }
 .loader h1{
-	font-family: 'Raleway';
+	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	color:#ff2755;
 	padding-top: 200px;
@@ -252,3 +252,40 @@ ul.flight-search>li:hover{
     border: none;
     border-radius: 4px;
 }
+.our-travel-agency{
+	background: url('../img/slide-vector3.png') center top no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #dcd9d9;
+	font-weight: normal;
+}
+.icon-circle{
+	position:relative;
+	display:inline-block;
+	text-indent:2px;
+	color:#fff;
+	border-radius:50%;
+	width: 82px;
+	height: 82px;
+	font-size: 32px;
+	line-height: 82px !important;
+	text-align:center;
+	font-size:12px;
+	overflow:hidden;
+	text-indent:-1px;
+}
+.icon-mandy{
+	background-color: #e94f6c;
+}
+.icon-primary{
+	background-color: #15bba4;
+}
+.icon-picton{
+	background-color: #08a5db;
+}
+.partners img{
+	max-width:100px;
+}
+

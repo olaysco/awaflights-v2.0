@@ -4,7 +4,8 @@
   <title>Awaflight | Cheapest flight booking platform</title>
   <meta name="description" content="Book cheap flight to anywhere around the world" />
   <meta name="keywords" content="Flight booking, cheap booking, visa processing, canada, america, best flight" />
-  <meta charset="utf-8" /><link rel="icon" href="favicon.png" />
+
+  <meta charset="utf-8" /><link rel="icon" href="{{asset('img/favicon.png')}}" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <link rel="stylesheet" href="{{asset('https://code.jquery.com/ui/1.12.1/themes/sunny/jquery-ui.css')}}"> 
@@ -14,6 +15,7 @@
 <link rel="stylesheet" href="{{asset('css/custom.css')}}" />
 <link rel="stylesheet" href="{{asset('fonts/FontAwesome/font-awesome.css')}}" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 <!-- Select 2 -->
 <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet">
 <!-- Int input -->
@@ -31,7 +33,7 @@
 	<div class="srch-overlay">
 		<div class="loader">
 			<img src="{{asset('img/loader.gif')}}" />
-			<h1><i class="fa fa-search"> </i> Searching for the best flight </h1>
+			<h1><i class="fa fa-search"> </i> Searching for the best deal for you </h1>
 		</div>		
 	</div>
 	<div class="autorize-popup">
@@ -68,8 +70,8 @@
 <header id="top">
 		<div class="header-a">
 			<div class="wrapper-padding">			
-				<div class="header-phone"><a href="tel:+2348113376030">+234 - 811 - 337 - 6030</a></div>
-				<div class="header-phone"><a href="tel:+2348113376030">+234 - 811 - 337 - 6030</a></div>
+				<div class="header-phone"><a href="tel:+2348120252353">+234 - 812 - 025 - 2353</a></div>
+				<div class="header-phone"><a href="tel:+2348117503583">+234 - 811 - 750 - 3583</a></div>
 				<div class="header-account">
 					<a href="#">My account</a>
 				</div>
@@ -110,7 +112,7 @@
 			<!-- \\ mobile menu \\ -->
 				
 			<div class="wrapper-padding">
-				<div class="header-logo"><a href="/home"><img alt="" src="img/logo.jpg"></a></div>
+				<div class="header-logo"><a href="/home"><img alt="" src="img/logo3.png"></a></div>
 				<div class="header-right">
 					<div class="hdr-srch">
 						<a href="#" class="hdr-srch-btn"></a>

@@ -408,5 +408,7 @@ $airlineNames = [];
 						$('.page-search-filter').toggleClass('hide');
 						$('.refine-search').toggleClass('hidden');
 				});
+
+				$('.price-sort').val('fare:asc').change();
 	});
 </script>
