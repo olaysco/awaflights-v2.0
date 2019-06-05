@@ -52,8 +52,8 @@ $infants = $pricedItinerary->fareBreakDown->numberOfInfant;
 			  <div class="sp-page-a">
 				  <div class="sp-page-l">
 						<div class="sp-page-lb">
-							<div class="sp-page-p">
-							  <div class="booking-left">
+							<div class="sp-page-p p6">
+							  <div class="booking-left bs br-4">
 								  <h2 style="text-transform:uppercase; font-weight: bold;">Your flight booking is successful</h2>
 
 								  <div class="comlete-alert">
@@ -218,7 +218,7 @@ $infants = $pricedItinerary->fareBreakDown->numberOfInfant;
 				  </div>
 			  </div>
 	  
-			  <div class="sp-page-r">
+			  <div class="sp-page-r bs br-4">
 				<div class="checkout-coll">
 					@foreach ($pricedItinerary->originDestinationOptions as $originDestinationOption)
 					<?php

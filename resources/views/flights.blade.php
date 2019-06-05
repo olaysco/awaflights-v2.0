@@ -143,7 +143,7 @@ $airlineNames = [];
 							$formClose = "</form>";
 							if($originCount >1){
 									if($options == 0){
-												$output .= "<div class='flight-item fly-in appeared flight-wrapper mix ${airlineName} ${stop_class} '  data-fare='${unformattedPrice}'>$formOpen<div class='flt-i-a'><div class='flt-i-b'>";
+												$output .= "<div class=' bs br-4 flight-item fly-in appeared flight-wrapper mix ${airlineName} ${stop_class} '  data-fare='${unformattedPrice}'>$formOpen<div class='flt-i-a'><div class='flt-i-b'>";
 										}
 										$output .= "<div class='flt-i-bb'><div class='flt-l-a'><div class='flt-l-b'><div class='company'><img alt=''  src='https://daisycon.io/images/airline/?width=100&height=50&&iata={$aCode}'></div>
 																</div><div class='flt-l-c'><div class='flt-l-cb'><div class='flt-l-c-padding'><div class='flyght-info-head'>$firstDepartureAirportName - $finalArrivalAirportName</div>
@@ -162,7 +162,7 @@ $airlineNames = [];
 										}
 							}else{
 								
-								$output .= "<div class='alt-flight fly-in appeared flight-wrapper mix ${airlineName} ${stop_class}' data-fare='${unformattedPrice}'>$formOpen<div class='alt-flight-a'><div class='alt-flight-l'>
+								$output .= "<div class='bs br-4 alt-flight fly-in appeared flight-wrapper mix ${airlineName} ${stop_class}' data-fare='${unformattedPrice}'>$formOpen<div class='alt-flight-a'><div class='alt-flight-l'>
 							<div class='alt-flight-lb'><div class='alt-center'><div class='alt-center-l'>
 							<div class='alt-center-lp'><div class='alt-logo'> <a href='#'><img alt='' src='https://daisycon.io/images/airline/?width=100&height=50&&iata={$aCode}'></a></div></div></div>
 							<div class='alt-center-c'><div class='alt-center-cb'><div class='alt-center-cp'><div class='alt-lbl'>$firstDepartureAirportName - $finalArrivalAirportName</div>
@@ -200,9 +200,9 @@ $airlineNames = [];
 			<div class="clear"></div>
 		  </div>
 		  <div class="two-colls">
-			<div class="two-colls-left">
+			<div class="two-colls-left bs br-4" style="padding-4px">
 			  
-			  <div class="srch-results-lbl fly-in appeared">
+			  <div class="srch-results-lbl fly-in appeared" style="background-color:transparent; margin-bottom:0;">
 				<span><i style="color:#d2183b; margin-right:6px; " class="fa fa-search"> </i> {{$numResults }} <?php if($numResults>1){ echo 'Airline results'; }else{ echo 'Airline result'; } ?> found.</span>
 			  </div> 
 				 
@@ -229,7 +229,7 @@ $airlineNames = [];
 			  <!-- // side // -->
 			  <div class="side-block fly-in appeared">
 				<div class="side-price">
-				  <div class="side-padding">
+				  <div class="side-padding" style="padding-right:30px; padding-left:30px;">
 					<div class="side-lbl">Price</div>
 					<div class="price-ranger">
 					  <div id="" class="" aria-disabled="false">
@@ -248,7 +248,7 @@ $airlineNames = [];
 			  <!-- \\ side \\ -->
 	  
 			  <!-- // side // -->
-			  <div class="side-block fly-in appeared">
+			  <div class="side-block fly-in appeared" style="margin-bottom:0px;">
 				<div class="side-stars">
 				  <div class="side-padding">
 					<div class="side-lbl">Airlines</div>  
@@ -326,11 +326,11 @@ $airlineNames = [];
 			  <!-- \\ side \\ -->
 			  
 			</div>
-			<div class="two-colls-right">
+			<div class="two-colls-right p6">
 			  <div class="two-colls-right-b">
 				<div class="padding">
 				
-				  <div class="catalog-head fly-in appeared">
+				  <div class="catalog-head fly-in appeared bs br-4 p6">
 					<label>Sort results by:</label>
 					<div class="search-select controls">
 									  <select class="price-sort">
@@ -353,7 +353,7 @@ $airlineNames = [];
 					<div class="clear"></div>
 				  </div>
 				  
-				  <div class="catalog-row alternative">
+				  <div class="catalog-row alternative p6">
 					  
 					  <!-- \\ alt-flight \\ -->
 					  <!-- \\ alt-flight \\ -->								

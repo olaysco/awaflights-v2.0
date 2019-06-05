@@ -48,7 +48,7 @@ $j = 0;
 		<div class="sp-page-a">
 			<div class="sp-page-l">
   				<div class="sp-page-lb">
-  					<div class="sp-page-p">
+  					<div class="sp-page-p p6">
 								@include('layout.errors')
 								<?php
 								if(null !== session('success')){
@@ -65,7 +65,7 @@ $j = 0;
 						<form method="POST" action="/complete-booking" id="completeBookingForm">
 					{{ csrf_field() }}
 					<input name="numberOfTraveller" type="hidden" value="{{$totalTravellers}}">
-						<div class="booking-left">
+						<div class="booking-left bs br-4">
 								
 							<h2><b>Passenger(s) Information</b></h2>
 							<?php  for($i =1; $i<=$adult; $i++){  $j++;?>
@@ -402,7 +402,7 @@ $j = 0;
 			</div>
 		</div>
 
-		<div class="sp-page-r">
+		<div class="sp-page-r bs br-4">
 			<div class="checkout-coll">
 					@foreach ($selPricedItinerary->originDestinationOptions as $originDestinationOption)
 					<?php

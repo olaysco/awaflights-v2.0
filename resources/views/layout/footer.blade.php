@@ -74,6 +74,7 @@
 	</footer>
 	
 	<script src="{{asset('js/jquery.1.7.1.js')}}"></script>
+	{{-- <script src="{{asset('js/jquery.min.js')}}"></script> --}}
 	<script src="{{asset('js/idangerous.swiper.js')}}"></script>
 	<script src="{{asset('js/slideInit.js')}}"></script>
 	<script src="{{asset('js/owl.carousel.min.js')}}"></script>
@@ -94,6 +95,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
 	
 	<script>
+	
             // In this example, we must bind 'change' event handlers to
             // our <select> elements, then interact with the mixer via
             // its .filter() and .sort() API methods.

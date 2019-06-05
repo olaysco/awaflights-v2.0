@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Mail;
+use Config;
 use App\Flight;
 use Validator;
 use Illuminate\Http\Request;
@@ -22,20 +23,25 @@ class FlightController extends Controller
 	private $ch;
 	private $err;
 	private $token = '';
+	private  $travel_den_key;
+	private $travel_den_auth;
 	private $flight_search = 'http://139.162.210.123:8086/v1/flight/process-flight-search';
 	private $flight_book = 'http://139.162.210.123:8086/v1/flight/create-affiliate-booking';
+	private $travel_beta_auth;
 
 
 	public function __construct(){
-
+		$this->travel_den_key = config('affiliate.travel_den_key');
+		$this->travel_den_auth = config('affiliate.travel_den_auth');
+		$this->travel_beta_auth = config('affiliate.travel_beta_auth');
 	}
 
     public function fetchAirport(Request $request){
         $query = $request->get('query');
 		$response = req::get('http://api.travelden.com:9000/flight/airports?city='.$query, 
 			array(
-				'X-Api-Key'=>'d79fe700-21e9-462b-b8c3-df7e5b7c68a5',
-    			'X-Auth-Token'=> 'tok-hkft25smd'
+				'X-Api-Key'=>"{$this->travel_den_key}",
+    			'X-Auth-Token'=> "{$this->travel_den_auth}"
     		)
 		);
 		$json_response = json_decode($response->raw_body);	
@@ -130,7 +136,7 @@ class FlightController extends Controller
 			CURLOPT_CUSTOMREQUEST => "POST",
 			CURLOPT_HTTPHEADER => array(
 			  "Content-Type: application/json",
-			  "Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NjkyODc4IiwiaXNzIjoiMTA1LjExMi4yMy4yMCIsImV4cCI6MTU1NjE1NjQzMSwiaWF0IjoxNTU2MTM0ODMxfQ.BxnECT7923KRSHczlq8PbkDNEf_JOeTARS4p0URWedc"
+			  "Authorization:{$this->travel_beta_auth}"
 			),
 		  ));
 			
@@ -190,7 +196,7 @@ class FlightController extends Controller
 			CURLOPT_CUSTOMREQUEST => "POST",
 			CURLOPT_HTTPHEADER => array(
 			  "Content-Type: application/json",
-			  "Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NjkyODc4IiwiaXNzIjoiMTA1LjExMi4yMy4yMCIsImV4cCI6MTU1NjE1NjQzMSwiaWF0IjoxNTU2MTM0ODMxfQ.BxnECT7923KRSHczlq8PbkDNEf_JOeTARS4p0URWedc"
+			  "Authorization:{$this->travel_beta_auth}"
 			),
 		  ));
 
@@ -252,7 +258,7 @@ class FlightController extends Controller
 			CURLOPT_CUSTOMREQUEST => "POST",
 			CURLOPT_HTTPHEADER => array(
 			  "Content-Type: application/json",
-			  "Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NjkyODc4IiwiaXNzIjoiMTA1LjExMi4yMy4yMCIsImV4cCI6MTU1NjE1NjQzMSwiaWF0IjoxNTU2MTM0ODMxfQ.BxnECT7923KRSHczlq8PbkDNEf_JOeTARS4p0URWedc"
+			  "Authorization:{$this->travel_beta_auth}"
 			),
 		  ));
 			$flightDetail = [];
@@ -399,7 +405,7 @@ class FlightController extends Controller
 			CURLOPT_CUSTOMREQUEST => "POST",
 			CURLOPT_HTTPHEADER => array(
 			  "Content-Type: application/json",
-			  "Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NjkyODc4IiwiaXNzIjoiMTA1LjExMi4yMy4yMCIsImV4cCI6MTU1NjE1NjQzMSwiaWF0IjoxNTU2MTM0ODMxfQ.BxnECT7923KRSHczlq8PbkDNEf_JOeTARS4p0URWedc"
+			  "Authorization:{$this->travel_beta_auth}"
 			),
 			));
 			

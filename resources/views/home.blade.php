@@ -921,15 +921,15 @@
 				
 				<div class="fly-in mp-popular-row" >
 					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="#">
-								<img alt="" src="img/offer-big-01.jpg" />
+						<div class="offer-slider-i bs br-4">
+							<a class="offer-slider-img br-4" href="#">
+								<img alt="" src="img/dubai.jpg" class="br-4" />
 								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
+									<span class="offer-slider-btn">coming soon</span>
 								</span>
 							</a>
-							<div class="offer-slider-txt">
-								<div class="offer-slider-link"><a href="#">Paris, france</a></div>
+							<div class="offer-slider-txt br-4">
+								<div class="offer-slider-link"><a href="#">Dubai, UAE</a></div>
 								<div class="offer-slider-l">
 									<div class="offer-slider-location">11 NOV 2019 - 22 NOV 2019</div>
 									<nav class="stars">
@@ -953,14 +953,14 @@
 						</div>
 					<!-- \\ -->
 					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="#">
-								<img alt="" src="img/offer-big-02.jpg" />
+						<div class="offer-slider-i bs br-4">
+							<a class="offer-slider-img br-4" href="#">
+								<img alt="" src="img/offer-big-02.jpg" class="br-4" />
 								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
+									<span class="offer-slider-btn">coming soon</span>
 								</span>
 							</a>
-							<div class="offer-slider-txt">
+							<div class="offer-slider-txt br-4">
 								<div class="offer-slider-link"><a href="#">amsterdam, netherlands</a></div>
 								<div class="offer-slider-l">
 									<div class="offer-slider-location">11 NOV 2019 - 22 NOV 2019</div>
@@ -985,15 +985,15 @@
 						</div>
 					<!-- \\ -->	
 					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="#">
-								<img alt="" src="img/offer-big-02.jpg" />
+						<div class="offer-slider-i bs br-4">
+							<a class="offer-slider-img br-4" href="#">
+								<img alt="" src="img/singapore.jpg" class="br-4"/>
 								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
+									<span class="offer-slider-btn">coming soon</span>
 								</span>
 							</a>
-							<div class="offer-slider-txt">
-								<div class="offer-slider-link"><a href="#">london, england</a></div>
+							<div class="offer-slider-txt br-4">
+								<div class="offer-slider-link"><a href="#">Orchard road, Singapore</a></div>
 								<div class="offer-slider-l">
 									<div class="offer-slider-location">11 NOV 2019 - 22 NOV 2019</div>
 									<nav class="stars">
@@ -1080,19 +1080,19 @@
 					
 				</header>
 				<div class="fly-in offer-slider-c">
-					<div id="offers-a" class="owl-slider">
+					<div id="offers-a" class="owl-slider owl-carousel owl-theme p6">
 					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="#">
-								<img alt="" src="img/slide-01.jpg" />
+						<div class="offer-slider-i bs br-4 item">
+							<a class="offer-slider-img br-4" href="#">
+								<img alt="" src="img/slide-09.jpg" class="br-4"/>
 								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
+									<span class="offer-slider-btn">coming soon</span>
 								</span>
 							</a>
-							<div class="offer-slider-txt">
-								<div class="offer-slider-link"><a href="#">Andrassy Thai Hotel</a></div>
+							<div class="offer-slider-txt br-4">
+								<div class="offer-slider-link"><a href="#">Eko Hotel & suites</a></div>
 								<div class="offer-slider-l">
-									<div class="offer-slider-location">Location: Thailand </div>
+									<div class="offer-slider-location">Location: Lagos </div>
 									<nav class="stars">
 										<ul>
 											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
@@ -1113,14 +1113,14 @@
 						</div>
 					<!-- \\ -->
 					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="#">
-								<img alt="" src="img/slide-02.jpg" />
+						<div class="offer-slider-i bs item br-4">
+							<a class="offer-slider-img br-4" href="#">
+								<img alt="" src="img/slide-07.jpg"  class="br-4"/>
 								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
+									<span class="offer-slider-btn">coming soon</span>
 								</span>
 							</a>
-							<div class="offer-slider-txt">
+							<div class="offer-slider-txt br-4">
 								<div class="offer-slider-link"><a href="#">Campanile Cracovie</a></div>
 								<div class="offer-slider-l">
 									<div class="offer-slider-location">location: poland</div>
@@ -1144,17 +1144,17 @@
 						</div>
 					<!-- \\ -->
 					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="#">
-								<img alt="" src="img/slide-03.jpg" />
+						<div class="offer-slider-i bs item br-4">
+							<a class="offer-slider-img br-4" href="#">
+								<img alt="" src="img/slide-10.jpg" class="br-4" />
 								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
+									<span class="offer-slider-btn">coming soon</span>
 								</span>
 							</a>
-							<div class="offer-slider-txt">
-								<div class="offer-slider-link"><a href="#">Park Plaza Westminster</a></div>
+							<div class="offer-slider-txt br-4">
+								<div class="offer-slider-link"><a href="#">Intercontinental Hotel</a></div>
 								<div class="offer-slider-l">
-									<div class="offer-slider-location">Location: Thailand </div>
+									<div class="offer-slider-location">Location: Lagos </div>
 									<nav class="stars">
 										<ul>
 											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
@@ -1175,17 +1175,17 @@
 						</div>
 					<!-- \\ -->
 					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="#">
-								<img alt="" src="img/slide-04.jpg" />
+						<div class="offer-slider-i bs br-4 item" >
+							<a class="offer-slider-img br-4" href="#">
+								<img alt="" src="img/slide-11.jpg" class="br-4" />
 								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
+									<span class="offer-slider-btn">coming soon</span>
 								</span>
 							</a>
-							<div class="offer-slider-txt">
-								<div class="offer-slider-link"><a href="#">Ermin's Hotel</a></div>
+							<div class="offer-slider-txt br-4">
+								<div class="offer-slider-link"><a href="#">Presidential Hotel</a></div>
 								<div class="offer-slider-l">
-									<div class="offer-slider-location">location: england</div>
+									<div class="offer-slider-location">location: Abuja</div>
 									<nav class="stars">
 										<ul>
 											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
@@ -1207,14 +1207,14 @@
 						</div>
 					<!-- \\ -->
 					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="#">
-								<img alt="" src="img/slide-01.jpg" />
+						<div class="offer-slider-i bs br-4 item">
+							<a class="offer-slider-img br-4" href="#">
+								<img alt="" src="img/slide-01.jpg" class="br-4" />
 								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
+									<span class="offer-slider-btn">coming soon</span>
 								</span>
 							</a>
-							<div class="offer-slider-txt">
+							<div class="offer-slider-txt br-4">
 								<div class="offer-slider-link"><a href="#">Andrassy Thai Hotel</a></div>
 								<div class="offer-slider-l">
 									<div class="offer-slider-location">Location: Thailand </div>
@@ -1239,17 +1239,17 @@
 						</div>
 					<!-- \\ -->
 					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="#">
-								<img alt="" src="img/slide-02.jpg" />
+						<div class="offer-slider-i bs br-4 item">
+							<a class="offer-slider-img br-4" href="#">
+								<img alt="" src="img/slide-05.jpg" class="br-4"/>
 								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
+									<span class="offer-slider-btn">coming soon</span>
 								</span>
 							</a>
-							<div class="offer-slider-txt">
-								<div class="offer-slider-link"><a href="#">Campanile Cracovie</a></div>
+							<div class="offer-slider-txt br-4">
+								<div class="offer-slider-link"><a href="#">Lobster </a></div>
 								<div class="offer-slider-l">
-									<div class="offer-slider-location">location: poland</div>
+									<div class="offer-slider-location">location: Texas</div>
 									<nav class="stars">
 										<ul>
 											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
@@ -1271,68 +1271,8 @@
 						</div>
 					<!-- \\ -->
 					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="#">
-								<img alt="" src="img/slide-03.jpg" />
-								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
-								</span>
-							</a>
-							<div class="offer-slider-txt">
-								<div class="offer-slider-link"><a href="#">Park Plaza Westminster</a></div>
-								<div class="offer-slider-l">
-									<div class="offer-slider-location">Location: Thailand </div>
-									<nav class="stars">
-										<ul>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-										</ul>
-										<div class="clear"></div>
-									</nav>
-								</div>
-								<div class="offer-slider-r">
-									{{-- <b>850$</b>
-									<span>avg/night</span> --}}
-								</div>
-								<div class="offer-slider-devider"></div>								
-								<div class="clear"></div>
-							</div>
-						</div>
-					<!-- \\ -->
-					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="#">
-								<img alt="" src="img/slide-04.jpg" />
-								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
-								</span>
-							</a>
-							<div class="offer-slider-txt">
-								<div class="offer-slider-link"><a href="#">Ermin's Hotel</a></div>
-								<div class="offer-slider-l">
-									<div class="offer-slider-location">location: england</div>
-									<nav class="stars">
-										<ul>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-a.png" /></a></li>
-										</ul>
-										<div class="clear"></div>
-									</nav>
-								</div>
-								<div class="offer-slider-r">
-									{{-- <b>630$</b>
-									<span>avg/night</span> --}}
-								</div>
-								<div class="offer-slider-devider"></div>								
-								<div class="clear"></div>
-							</div>
-						</div>
+
+
 					<!-- \\ -->
 
 					</div>
