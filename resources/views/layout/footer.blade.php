@@ -65,9 +65,17 @@
 		<div class="wrapper-padding">
 			<div class="footer-left">© Copyright 2019 by Awaflights. All rights reserved.</div>
 			<div class="footer-social">
-				<a href="https://www.twitter.com/awaflights" class="footer-twitter"></a>
-				<a href="https://www.facebook.com/awaflights" class="footer-facebook"></a>
-				<a href="https://www.instagram.com/awaflights" class="footer-instagram"></a>
+				<a href="https://www.twitter.com/awaflights" target="_blank" class="footer-twitter"></a>
+				<a href="https://www.facebook.com/awaflights" target="_blank"  class="footer-facebook"></a>
+				<a href="https://www.instagram.com/awaflights" target="_blank"  class="footer-instagram"></a>
+				<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> made with <i class="fa fa-heart" style="color:red"></i>by <a href="https://github.com/olaysco" target="_blank" style="
+					float: none;
+					display: inline;
+					margin: 0;
+					width: unset;
+					height: unset;
+					color: #2d050d;
+				">Olaysco</a></span>
 			</div>
 			<div class="clear"></div>
 		</div>

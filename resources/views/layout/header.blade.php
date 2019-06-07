@@ -74,7 +74,7 @@
 				<div class="header-phone"><a href="tel:+2348120252353">+234 - 812 - 025 - 2353</a></div>
 				<div class="header-phone"><a href="tel:+2348117503583">+234 - 811 - 750 - 3583</a></div>
 				<div class="header-account">
-					<a href="#">My account</a>
+					<a href="/login" target="_blank">My account</a>
 				</div>
 					
 				<div class="header-lang">

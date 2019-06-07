@@ -10,7 +10,9 @@ $user = Auth::user();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>AwaFlights Dashboard</title>
-  <!-- plugins:css -->
+	<!-- plugins:
+		css -->
+		<meta charset="utf-8" /><link rel="icon" href="{{asset('img/favicon.png')}}" />
   <link rel="stylesheet" href="{{ asset('admin_vendor/vendors/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{ asset('admin_vendor/vendors/base/vendor.bundle.base.css') }}">
   <!-- endinject -->
@@ -20,7 +22,7 @@ $user = Auth::user();
   <!-- inject:css -->
   <link rel="stylesheet" href="{{ asset('admin_vendor/css/style.css') }}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="" />
+  <link rel="shortcut icon" href="{{asset('img/favicon.png')}}" />
 </head>
 <body>
   <div class="container-scroller">

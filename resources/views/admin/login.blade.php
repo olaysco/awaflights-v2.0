@@ -2,6 +2,7 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8" /><link rel="icon" href="{{asset('img/favicon.png')}}" />
 		<title>AwaFlights Dashboard</title>
 		<!-- plugins:css -->
 		<link rel="stylesheet" href="{{ asset('admin_vendor/vendors/mdi/css/materialdesignicons.min.css')}}">
@@ -12,7 +13,7 @@
 		<!-- inject:css -->
 		<link rel="stylesheet" href="{{ asset('admin_vendor/css/style.css') }}">
 		<!-- endinject -->
-		<link rel="shortcut icon" href="">
+		<link rel="shortcut icon" href="{{asset('img/favicon.png')}}"">
 	  </head>
 	  
 	  <body>
