@@ -25,8 +25,10 @@ class FlightController extends Controller
 	private $token = '';
 	private  $travel_den_key;
 	private $travel_den_auth;
-	private $flight_search = 'http://139.162.210.123:8086/v1/flight/process-flight-search';
-	private $flight_book = 'http://139.162.210.123:8086/v1/flight/create-affiliate-booking';
+	// private $flight_search = 'http://139.162.210.123:8086/v1/flight/process-flight-search';
+	// private $flight_book = 'http://139.162.210.123:8086/v1/flight/create-affiliate-booking';
+	private $flight_search = 'https://api.travelbeta.com/v1/flight/process-flight-search';
+	private $flight_book = 'https://api.travelbeta.com/v1/flight/create-affiliate-booking';	
 	private $travel_beta_auth;
 
 

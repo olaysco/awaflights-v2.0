@@ -202,7 +202,7 @@ $airlineNames = [];
 		  <div class="two-colls">
 			<div class="two-colls-left bs br-4" style="padding-4px">
 			  
-			  <div class="srch-results-lbl fly-in appeared" style="background-color:transparent; margin-bottom:0;">
+			  <div class="srch-results-lbl fly-in appeared" style=" margin-bottom:-8px;">
 				<span><i style="color:#d2183b; margin-right:6px; " class="fa fa-search"> </i> {{$numResults }} <?php if($numResults>1){ echo 'Airline results'; }else{ echo 'Airline result'; } ?> found.</span>
 			  </div> 
 				 
