@@ -167,12 +167,12 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$('.header-account a').click(function(){
-		$('.overlay').fadeIn(function(){
-			$('.autorize-popup').animate({top: '50%'}, 300).find('input:text').eq('0').focus();
-		});
-		return false;
-	});
+// 	$('.header-account a').click(function(){
+// 		$('.overlay').fadeIn(function(){
+// 			$('.autorize-popup').animate({top: '50%'}, 300).find('input:text').eq('0').focus();
+// 		});
+// 		return false;
+// 	});
 
 	$('.overlay').click(function(){
 		$('.autorize-popup').animate({top: '-300px'}, 300, function(){
