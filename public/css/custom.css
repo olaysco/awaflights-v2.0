@@ -306,7 +306,7 @@ ul.flight-search>li:hover{
 	border-radius:4px;
 }
 .bs{
-	box-shadow: 0px 0px 4px #999;
+	/* box-shadow: 0px 0px 4px #999; */
 }
 .p6{
 	padding:6px;

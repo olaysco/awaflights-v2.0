@@ -1409,7 +1409,7 @@ nav ul,nav ul li {margin:0px;padding:0px;list-style:none;}
 .flight-details-c {font-size: 11px; color:#a0a0a0;}
 .flight-details-d {text-transform: uppercase; margin: 6px 0px 0px 0px; font-size: 11px; color:#2d050d; line-height: 22px;}
 .flight-details > table > thead > tr > th{ font-weight: bold !important;}
-.flight-details > table > tbody > tr > td{ padding: 8px; line-height: 1.42857143; vertical-align: top;  border-top: 1px solid #FF9800; }
+.flight-details > table > tbody > tr > td{ padding: 8px; line-height: 1.42857143; vertical-align: top;  border-top: 1px solid hsl(349, 79%, 46%); }
 
 .side-time-holder {padding-top: 4px;}
 .side-time {margin-bottom: 22px;}

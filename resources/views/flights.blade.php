@@ -330,7 +330,7 @@ $airlineNames = [];
 			  <div class="two-colls-right-b">
 				<div class="padding">
 				
-				  <div class="catalog-head fly-in appeared bs br-4 p6">
+				  <div class="catalog-head fly-in appeared bs br-4">
 					<label>Sort results by:</label>
 					<div class="search-select controls">
 									  <select class="price-sort">
