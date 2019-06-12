@@ -50,10 +50,10 @@ $(document).ready(function(){
 	$headerUp = function() {
 		$('.header-a').slideDown(150);
 		$('.header-b').removeClass('fixed');
-		$('.header-b').css('height','89px');
-		$('.header-logo').css('margin-top','17px');
-		$('.header-right').css('margin-top','37px');
-		$('.header-logo').find('img').attr('src','img/logo.png');
+		$('.header-b').css('height','60px');
+		$('.header-logo').css('margin-top','10px');
+		$('.header-right').css('margin-top','21px');
+		$('.header-logo').find('img').attr('src','img/logo-a.png');
 	}
 
 	$(window).scroll(function(){

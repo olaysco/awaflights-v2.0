@@ -23,6 +23,12 @@ $ageGroupArray = ["1"=>"INFANT","2"=>"CHILD","3"=>"ADULT"];
 		<?php 
 		$flightDetails = json_decode($flight->flightDetails); 
 		$travellers = $flightDetails->travellers;
+		/**
+		 * this is needed to check if a flight is 
+		 * international or required, since passport is only 
+		 * required for international flight
+		**/
+		$passportRequired  = isset($flightDetails->travellers[0]->passportNumber)??false;
 		$pricedItinerary = $flightDetails->pricedItinerary;
 		$contactDetails = $flightDetails->contactInformation;
 		?>
@@ -83,7 +89,8 @@ $ageGroupArray = ["1"=>"INFANT","2"=>"CHILD","3"=>"ADULT"];
 								<td>{{ $arr_time['time'].' '.$arr_time['day'].' '.$arr_time['month_day'].' '.$arr_time['year'] }}</td>
 								<td>{{ $d->journeyDuration }}</td>
 								<td><img src="https://c.fareportal.com/n/common/air/3x/{{$d->airlineCode}}.png" style="width:20px; height:20px;">{{ $d->airlineName }}</td>
-							  </tr>
+							  
+						 </tr>
 						  <?php } ?>
 						  @endforeach
 						</tbody>
@@ -107,7 +114,13 @@ $ageGroupArray = ["1"=>"INFANT","2"=>"CHILD","3"=>"ADULT"];
 											<th scope="col">Last Name</th>
 											<th scope="col">First Name</th>
 											<th scope="col">Date Of Birth</th>
-											<th scope="col">Age Group</th></tr>
+											<th scope="col">Age Group</th>
+											@if ($passportRequired)
+											<th scope="col">Pt. Number</th>
+											<th scope="col">Pt. Exp. Date</th>
+											<th scope="col">Pt. ICC</th> 
+											@endif
+											</tr>
 									</thead>
 									<tbody>
 										@foreach ($travellers as $traveller)
@@ -117,6 +130,11 @@ $ageGroupArray = ["1"=>"INFANT","2"=>"CHILD","3"=>"ADULT"];
 												<td>{{$traveller->firstName}}</td>
 												<td>{{$traveller->dateOfBirth}}</td>
 												<td>{{$ageGroupArray[$traveller->ageGroup]}}</td>
+												@if ($passportRequired)
+												<td>{{ $traveller->passportNumber }}</td>
+												<td>{{ $traveller->passportExpiryDate }}</td>
+												<td>{{ $traveller->passportIssuingCountryCode }}</td>
+												@endif
 											</tr>
 										@endforeach
 									</tbody>

@@ -1,6 +1,10 @@
 @extends('admin.master')
 
 @section('main')
+<?php
+
+ $isInternational = (function ($flight) { return isset(json_decode($flight->flightDetails)->travellers[0]->passportNumber)??false; });
+?>
 <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
@@ -156,29 +160,33 @@
                     <table id="recent-purchases-listing" class="table">
                       <thead>
                         <tr>
+													
+                            <th></th>
+														<th>Date booked</th>
                             <th>Booking No</th>
 														<th>Reference No</th>
 														<th>Ticket Expires</th>
                             <th>Email</th>
                             <th>Phone</th>
-                            <th>Flight Details</th>
                             <th>Status</th>
                         </tr>
                       </thead>
                       <tbody>
 												@foreach ($flights as $flight)
-												<tr>
+											<a href="">	<tr style="background-color:<?php  echo $isInternational($flight)?'#bdffc1':'#bdf2ff' ?>">
+														
+													<td><a href="{{ action('AdminController@getFlightDetail', $flight->id)}}"><i class="mdi mdi-table-edit"></i></a></td>
+														<td><strong><time>{{ $flight->created_at}}</time></strong></td>
                             <td>{{$flight->bookingNumber}}</td>
                             <td>{{$flight->referenceNumber}}</td>
                             <td>{{$flight->ticketLimitDate}}</td>
                             <td>{{$flight->email}}</td>
                             <td>{{$flight->phoneNumber}}</td>
-														<td><a href="{{ action('AdminController@getFlightDetail', $flight->id)}}">Flight Details</a></td>
 														<td>{{$flight->status}}</td>
-                        </tr>
+                        </tr></a>
 												@endforeach
                         
-                        
+												              
                       </tbody>
                     </table>
                   </div>

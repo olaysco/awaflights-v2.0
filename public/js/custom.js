@@ -1,112 +1,4 @@
 
-<footer class="footer-a">
-		<div class="wrapper-padding">
-			<div class="section">
-				<div class="footer-lbl">Get In Touch</div>
-				<div class="footer-adress">28, Alhaji Riliwan street,<br />Aribila Odongunyan, Ikorodu<br /> Lagos state, Nigeria.</div>
-				<div class="footer-phones">+2348120252353,<br />+2348117503583</div>
-				<div class="footer-email">info@awaflights.com</div>
-			</div>
-			<div class="section">
-				<div class="footer-lbl">Featured deals</div>
-				<div class="footer-tours">
-				<!-- // -->
-				<div class="footer-tour">
-					<div class="footer-tour-l"><img alt="" src="img/f-tour-01.jpg" /></div>
-					<div class="footer-tour-r">
-						<div class="footer-tour-a">amsterdam tour</div>
-						<div class="footer-tour-b">location: netherlands</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-				<!-- \\ -->
-				<!-- // -->
-				<div class="footer-tour">
-					<div class="footer-tour-l"><img alt="" src="img/f-tour-02.jpg" /></div>
-					<div class="footer-tour-r">
-						<div class="footer-tour-a">Kiev tour</div>
-						<div class="footer-tour-b">location: ukraine</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-				<!-- \\ -->			
-				<!-- // -->
-				<div class="footer-tour">
-					<div class="footer-tour-l"><img alt="" src="img/f-tour-03.jpg" /></div>
-					<div class="footer-tour-r">
-						<div class="footer-tour-a">vienna tour</div>
-						<div class="footer-tour-b">location: austria</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-				<!-- \\ -->
-				</div>
-			</div>
-			<div class="section">
-				<div class="footer-lbl">Twitter widget</div>
-				<div class="twitter-wiget">
-					<div id="twitter-feed"><a class="twitter-timeline" data-width="400" data-height="281" data-link-color="#d2183b" href="https://twitter.com/AwaFlights?ref_src=twsrc%5Etfw">Tweets by AwaFlights</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-				</div>
-			</div>
-			{{-- <div class="section">
-				<div class="footer-lbl">newsletter sign up</div>
-				<div class="footer-subscribe">
-					<div class="footer-subscribe-a">
-						<input type="text" placeholder="you email" value="" />
-					</div>
-				</div>
-				<button class="footer-subscribe-btn">Sign up</button>
-			</div> --}}
-		</div>
-		<div class="clear"></div>
-	</footer>
-	
-	<footer class="footer-b">
-		<div class="wrapper-padding">
-			<div class="footer-left">© Copyright 2019 by Awaflights. All rights reserved.</div>
-			<div class="footer-social">
-				<a href="https://www.twitter.com/awaflights" target="_blank" class="footer-twitter"></a>
-				<a href="https://www.facebook.com/awaflights" target="_blank"  class="footer-facebook"></a>
-				<a href="https://www.instagram.com/awaflights" target="_blank"  class="footer-instagram"></a>
-				<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> made with <i class="fa fa-heart" style="color:red"></i>by <a href="https://github.com/olaysco" target="_blank" style="
-					float: none;
-					display: inline;
-					margin: 0;
-					width: unset;
-					height: unset;
-					color: #2d050d;
-				">Olaysco</a></span>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</footer>
-	
-	<script src="{{asset('js/jquery.1.7.1.js')}}"></script>
-	{{-- <script src="{{asset('js/jquery.min.js')}}"></script> --}}
-	<script src="{{asset('js/idangerous.swiper.js')}}"></script>
-	<script src="{{asset('js/slideInit.js')}}"></script>
-	<script src="{{asset('js/owl.carousel.min.js')}}"></script>
-	<script src="{{asset('js/bxSlider.js')}}"></script>
-	<script src="{{asset('js/jqeury.appear.js')}}"></script>  
-	<script src="{{asset('js/script.js')}}"></script>
-	<script src="{{asset('js/custom.select.js')}}"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-  		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  		crossorigin="anonymous"></script>
-	<script src="{{ asset('js/select2.min.js') }}"></script>
-	<script src="{{asset('js/jquery.mixitup.min.js')}}"></script>
-	<script src="{{asset('js/mixitup.js')}}"></script>
-		<!-- intelinput JS -->
-		<script src="{{asset('js/intltelinput/intlTelInput.min.js')}}"></script>
-	{{-- <script src="{{asset('js/mix.js')}}"></script> --}}
-	{{-- <script type="text/javascript" src="{{asset('js/twitterfeed.js')}}"></script> --}}
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
-	
-	<script>
-	
-            // In this example, we must bind 'change' event handlers to
-            // our <select> elements, then interact with the mixer via
-            // its .filter() and .sort() API methods.
 			$('.search-form').on('submit', function(e){
 				$('.srch-overlay').show();
 			});
@@ -174,9 +66,7 @@
 
                 mixer.filter(selectorString);
             });
-        </script>
-
-	<script>
+     
 		$(document).ready(function(){
 		$('.date-inpt').datepicker({
 			minDate:'1'
@@ -236,10 +126,7 @@
 		
 		   $(".owl-slider").owlCarousel({
 			  loop:true,
-			  autoplay:true,
-			  autoplayTimeout:1000,
 			  margin:28,
-			  rewind:true,
 			  responsiveClass:true,
 			  responsive:{
 		  0:{
@@ -265,13 +152,11 @@
 		  $slideHover();
 		
 		});
-	</script>
-  <!-- \\ scripts \\ --> 
+
+ 
    
-  </body>  
+ 
   
-  </html> 
-  <script>
 	  var input = document.querySelector('#phoneNumber');
 		var iti = window.intlTelInput(input,{
 			nationalMode: true,
@@ -297,7 +182,7 @@
 				
 				dropdown.append('<option selected="true" disabled>Country</option>');
 				dropdown.prop('selectedIndex', 0);
-				const url = '{{asset('js/country_code.json')}}';
+				const url = '{{asset('country_code.json')}}';
 				$.getJSON(url, function (data) {
 				$.each(data, function (key, entry) {
 					dropdown.append($('<option></option>').attr('value', entry.Code).text(entry.Name));
@@ -310,8 +195,7 @@
 
 
 
-	</script>
-  <script>
+	
 		$(document).ready(function(){
 			
 			
@@ -369,8 +253,8 @@
 							'<input type="text" name="To_m'+tripNum+'" id="to_m'+tripNum+'" class="form-control auto-complete" placeholder="To" required autocomplete="off">'+
 							'<img src="'+loaderImgLocation+'" class="search_loader to_m'+tripNum+'_loader" style="width:16px;position: absolute;top: 10px;right: -4px;"> '+
 							'<input name="to_m'+tripNum+'Input" id="to_m'+tripNum+'input" type="hidden"><div id="optionTo_m'+tripNum+'"></div></div></div>'+
-							'<div class="clear"></div></div></div><div class="search-large-i" ><div class="srch-tab-line no-margin-bottom" style="margin-top:30px;">'+
-							'<div class="srch-tab-left"><label>Departure</label><div class="input-a"><input type="text" name="dept_date'+tripNum+'" class="date-inpt" placeholder="mm/dd/yy" autocomplete="off" required/>'+
+							'<div class="clear"></div></div></div><div class="search-large-i" style="float:none;"><div class="srch-tab-line no-margin-bottom">'+
+							'<div class="srch-tab-left"><label>Departure</label><div class="input-a"><input type="text" name="dept_date'+tripNum+'" class="date-inpt" placeholder="Departure" autocomplete="off" required/>'+
 							'<span class="date-icon"></span></div></div><div class="clear"></div></div></div></div>';
 				tripsContainer.append(trip_input);
 				$('.search_loader').hide();
@@ -442,4 +326,3 @@
 			
 
   		});
-	</script>	  

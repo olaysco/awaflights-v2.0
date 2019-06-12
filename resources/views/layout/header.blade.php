@@ -73,6 +73,7 @@
 			<div class="wrapper-padding">			
 				<div class="header-phone"><a href="tel:+2348120252353">+234 - 812 - 025 - 2353</a></div>
 				<div class="header-phone"><a href="tel:+2348117503583">+234 - 811 - 750 - 3583</a></div>
+				<div class="header-phone sm-none"><a href="tel:+2348117503583">info@awaflights.com</a></div>
 				<div class="header-account">
 					<a href="/login">My account</a>
 				</div>
@@ -113,7 +114,7 @@
 			<!-- \\ mobile menu \\ -->
 				
 			<div class="wrapper-padding">
-				<div class="header-logo"><a href="/home"><img alt="" src="img/logo3.png"></a></div>
+				<div class="header-logo"><a href="/home"><img alt="" src="img/logo-a.png"></a></div>
 				<div class="header-right">
 					<div class="hdr-srch">
 						<a href="#" class="hdr-srch-btn"></a>

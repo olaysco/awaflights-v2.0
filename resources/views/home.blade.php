@@ -66,60 +66,7 @@
 							<!-- \\ -->							
 							</div>
 							<!-- \\ -->
-							<!-- // -->
-							<div class="search-large-i">
-							<!-- // -->
-							<div class="srch-tab-line no-margin-bottom">
-									<div class="srch-tab-left">
-											<label>Adult</label>
-											<div class="select-wrapper">
-													<select class="custom-select" name="adult" required data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-															<option value="">Adult</option>
-															<option value="1" selected>1</option>
-															<option value="2">2</option>
-															<option value="3">3</option>
-															<option value="4">4</option>
-															<option value="5">5</option>
-															<option value="6">6</option>
-														</select>
-											</div>	
-											
-										
-										</div>
-										<div class="srch-tab-right">
-												
-												<div class="select-wrapper">
-														<label>Child</label>
-														<select class="custom-select" required name="child" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-																<option value="">Children</option>
-																<option value="0" selected>0</option>
-																<option value="1">1</option>
-																<option value="2">2</option>
-																<option value="3">3</option>
-																<option value="4">4</option>
-																<option value="5">5</option>
-																<option value="6">6</option>
-															</select>
-												</div>
-												<div class="select-wrapper">
-														<label>Infant</label>
-														<select class="custom-select" name="infant" required data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-																<option value="">Infant</option>
-																<option value="0" selected>0</option>
-																<option value="1">1</option>
-																<option value="2">2</option>
-																<option value="2">3</option>
-																<option value="4">4</option>
-															</select>
-												</div>
-											</div>
-								
-								<div class="clear"></div>
-							</div>
-							<!-- \\ -->							
-							</div>
-							<!-- \\ -->
-							<!-- // -->
+														<!-- // -->
 							<div class="search-large-i">
 							<!-- // -->
 							<div class="srch-tab-line no-margin-bottom">
@@ -128,7 +75,7 @@
 											<label>Departure</label>
 											<div class="input-a">
 													<input type="text" name="dept_date"
-													 min="{{date("Y-m-d", strtotime("yesterday"))}}"  required class="date-inpt" placeholder="Departure" autocomplete="off"/>
+													 min="{{date("Y-m-d", strtotime("yesterday"))}}"  required class="date-inpt" placeholder="mm/dd/yy" autocomplete="off"/>
 												 <span class="date-icon"></span></div>
 												
 										</div>
@@ -149,60 +96,70 @@
 							
 							<!-- \\ -->								
 							</div>
+							<!-- // -->
+							<div class="search-large-i">
+							<!-- // -->
+							<div class="srch-tab-line no-margin-bottom">
+									<div class="srch-tab-3c">
+											<label>Adult</label>
+											<div class="select-wrapper">
+													<select class="custom-select" name="adult" required data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+															<option value="">Adult</option>
+															<option value="1" selected>1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+														</select>
+											</div>	
+											
+										
+										</div>
+										<div class="srch-tab-3c">
+												
+												<div class="select-wrapper">
+														<label>Child</label>
+														<select class="custom-select" required name="child" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+																<option value="">Children</option>
+																<option value="0" selected>0</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="3">3</option>
+																<option value="4">4</option>
+																<option value="5">5</option>
+																<option value="6">6</option>
+															</select>
+												</div>
+											</div>
+											<div class="srch-tab-3c">
+												<div class="select-wrapper">
+														<label>Infant</label>
+														<select class="custom-select" name="infant" required data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+																<option value="">Infant</option>
+																<option value="0" selected>0</option>
+																<option value="1">1</option>
+																<option value="2">2</option>
+																<option value="2">3</option>
+																<option value="4">4</option>
+															</select>
+												</div>
+											</div>
+								
+								<div class="clear"></div>
+							</div>
+							<!-- \\ -->							
+							</div>
+							<!-- \\ -->
+
 							<!-- \\ -->
 							<div class="clear"></div>
 							<!-- // advanced // -->
-							<div class="search-asvanced">
-							<!-- // -->
-							<div class="search-large-i">
-							<!-- // -->
-							<div class="srch-tab-line no-margin-bottom">
-								<label>Price</label>
-								<div class="select-wrapper">
-									<select class="custom-select">
-										<option>--</option>
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-									</select>
-								</div>	
-							</div>
-							<!-- \\ -->						
-							</div>
-							<!-- \\ -->
-							<!-- // -->
-							<div class="search-large-i">
-							<!-- // -->
-							<div class="srch-tab-line no-margin-bottom">
-								<label>Air company</label>
-								<div class="select-wrapper">
-									<select class="custom-select">
-										<option>--</option>
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-									</select>
-								</div>	
-							</div>
-							<!-- \\ -->							
-							</div>
-							<!-- \\ -->
-							<!-- // -->
-							<div class="search-large-i">
-							<!-- // -->
 							
-							<!-- \\ -->							
-							</div>
-							<!-- \\ -->
-							<div class="clear"></div>
-						</div>
 						<!-- \\ advanced \\ -->
 						</div>
 						<footer class="search-footer">
-							<button class="srch-btn">Search</button>	
-							<span class="srch-lbl">Advanced Search options</span>
+							<button class="srch-btn" style="float: right;">Search</button>
 							<div class="clear"></div>
 						</footer>
 					</form>
@@ -241,11 +198,47 @@
 										<!-- \\ -->							
 										</div>
 										<!-- \\ -->
+																				<!-- // -->
+										<div class="search-large-i">
+										<!-- // -->
+										<div class="srch-tab-line no-margin-bottom">
+											
+												<div class="srch-tab-3c">
+														<label>Departure</label>
+														<div class="input-a">
+																<input type="text" name="dept_date" class="date-inpt" placeholder="mm/dd/yy" required autocomplete="off"/>
+															 <span class="date-icon"></span></div>
+															
+													</div>
+													<div class="srch-tab-3c">
+															 <label>Arrival</label>
+															 <div class="input-a">
+																	<input type="text" name="arrival_date" class="date-inpt" placeholder="mm/dd/yy" required autocomplete="off"/>
+																  <span class="date-icon"></span></div>
+															
+													</div>
+													
+													<div class="srch-tab-3c">
+															<label>Class</label>
+															<div class="select-wrapper">
+																	<select class="custom-select" name="ticketClass" required >
+																			<option value="">Choose seat class</option>
+																			<option value="1" selected>Economy</option>
+																			<option value="2">Business</option>
+																			<option value="3">Executive</option>
+																		</select>
+															</div>	
+														</div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- \\ -->								
+										</div>
 										<!-- // -->
 										<div class="search-large-i">
 										<!-- // -->
 										<div class="srch-tab-line no-margin-bottom">
-												<div class="srch-tab-left transformed">
+												<div class="srch-tab-3c">
 														<label>Adult</label>
 														<div class="select-wrapper">
 																<select class="custom-select" name="adult" required data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
@@ -261,7 +254,7 @@
 														
 													
 													</div>
-													<div class="srch-tab-right">
+													<div class="srch-tab-3c">
 															
 															<div class="select-wrapper">
 																	<label>Child</label>
@@ -276,6 +269,8 @@
 																			<option value="6">6</option>
 																		</select>
 															</div>
+														</div>
+														<div class="srch-tab-3c">
 															<div class="select-wrapper">
 																	<label>Infant</label>
 																	<select class="custom-select" name="infant" required data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
@@ -294,93 +289,15 @@
 										<!-- \\ -->							
 										</div>
 										<!-- \\ -->
-										<!-- // -->
-										<div class="search-large-i">
-										<!-- // -->
-										<div class="srch-tab-line no-margin-bottom">
-											
-												<div class="srch-tab-left">
-														<label>Departure</label>
-														<div class="input-a">
-																<input type="text" name="dept_date" class="date-inpt" placeholder="Departure" required autocomplete="off"/>
-															 <span class="date-icon"></span></div>
-															 <label>Arrival</label>
-															 <div class="input-a">
-																	<input type="text" name="arrival_date" class="date-inpt" placeholder="Arrival" required autocomplete="off"/>
-																  <span class="date-icon"></span></div>
-															
-													</div>
-													
-													<div class="srch-tab-right">
-															<label>Class</label>
-															<div class="select-wrapper">
-																	<select class="custom-select" name="ticketClass" required >
-																			<option value="">Choose seat class</option>
-																			<option value="1" selected>Economy</option>
-																			<option value="2">Business</option>
-																			<option value="3">Executive</option>
-																		</select>
-															</div>	
-														</div>
-											<div class="clear"></div>
-										</div>
-										
-										<!-- \\ -->								
-										</div>
+
 										<!-- \\ -->
 										<div class="clear"></div>
 										<!-- // advanced // -->
-										<div class="search-asvanced">
-										<!-- // -->
-										<div class="search-large-i">
-										<!-- // -->
-										<div class="srch-tab-line no-margin-bottom">
-											<label>Price</label>
-											<div class="select-wrapper">
-												<select class="custom-select">
-													<option>--</option>
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-												</select>
-											</div>	
-										</div>
-										<!-- \\ -->						
-										</div>
-										<!-- \\ -->
-										<!-- // -->
-										<div class="search-large-i">
-										<!-- // -->
-										<div class="srch-tab-line no-margin-bottom">
-											<label>Air company</label>
-											<div class="select-wrapper">
-												<select class="custom-select">
-													<option>--</option>
-													<option>1</option>
-													<option>2</option>
-													<option>3</option>
-													<option>4</option>
-												</select>
-											</div>	
-										</div>
-										<!-- \\ -->							
-										</div>
-										<!-- \\ -->
-										<!-- // -->
-										<div class="search-large-i">
-										<!-- // -->
 										
-										<!-- \\ -->							
-										</div>
-										<!-- \\ -->
-										<div class="clear"></div>
-									</div>
 									<!-- \\ advanced \\ -->
 									</div>
 									<footer class="search-footer">
-										<button class="srch-btn">Search</button>	
-										<span class="srch-lbl">Advanced Search options</span>
+										<button class="srch-btn" style="float:right">Search</button>
 										<div class="clear"></div>
 									</footer>
 								</form>
@@ -429,7 +346,7 @@
 												<div class="search-large-i">
 												<!-- // -->
 												<div class="srch-tab-line no-margin-bottom">
-														<div class="srch-tab-left transformed">
+														<div class="srch-tab-3c">
 																<label>Adult</label>
 																<div class="select-wrapper">
 																		<select class="custom-select" name="adult" required data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
@@ -445,7 +362,7 @@
 																
 															
 															</div>
-															<div class="srch-tab-right">
+															<div class="srch-tab-3c">
 																	
 																	<div class="select-wrapper">
 																			<label>Child</label>
@@ -460,6 +377,8 @@
 																					<option value="6">6</option>
 																				</select>
 																	</div>
+																</div>
+																<div class="srch-tab-3c">
 																	<div class="select-wrapper">
 																			<label>Infant</label>
 																			<select class="custom-select" name="infant" required data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
@@ -486,7 +405,7 @@
 														<div class="srch-tab-left">
 																<label>Departure</label>
 																<div class="input-a">
-																		<input type="text" name="dept_date1" class="date-inpt" placeholder="Departure" autocomplete="off" required/>
+																		<input type="text" name="dept_date1" class="date-inpt" placeholder="mm/dd/yy" autocomplete="off" required/>
 																	 <span class="date-icon"></span></div>
 																	
 															</div>
@@ -535,12 +454,12 @@
 																</div>
 																</div>
 				
-																<div class="search-large-i" style="float:none;">
-																		<div class="srch-tab-line no-margin-bottom">
+																<div class="search-large-i">
+																		<div class="srch-tab-line no-margin-bottom" style="margin-top:30px;">
 																			<div class="srch-tab-left">
 																					<label>Departure</label>
 																					<div class="input-a">
-																							<input type="text" name="dept_date2" class="date-inpt" placeholder="Departure" autocomplete="off" required/>
+																							<input type="text" name="dept_date2" class="date-inpt" placeholder="mm/dd/yy" autocomplete="off" required/>
 																						 <span class="date-icon"></span></div>
 																						
 																				</div>
@@ -555,57 +474,11 @@
 												<!-- \\ -->
 												<div class="clear"></div>
 												<!-- // advanced // -->
-												<div class="search-asvanced">
-												<!-- // -->
-												<div class="search-large-i">
-												<!-- // -->
-												<div class="srch-tab-line no-margin-bottom">
-													<label>Price</label>
-													<div class="select-wrapper">
-														<select class="custom-select">
-															<option>--</option>
-															<option>1</option>
-															<option>2</option>
-															<option>3</option>
-															<option>4</option>
-														</select>
-													</div>	
-												</div>
-												<!-- \\ -->						
-												</div>
-												<!-- \\ -->
-												<!-- // -->
-												<div class="search-large-i">
-												<!-- // -->
-												<div class="srch-tab-line no-margin-bottom">
-													<label>Air company</label>
-													<div class="select-wrapper">
-														<select class="custom-select">
-															<option>--</option>
-															<option>1</option>
-															<option>2</option>
-															<option>3</option>
-															<option>4</option>
-														</select>
-													</div>	
-												</div>
-												<!-- \\ -->							
-												</div>
-												<!-- \\ -->
-												<!-- // -->
-												<div class="search-large-i">
-												<!-- // -->
 												
-												<!-- \\ -->							
-												</div>
-												<!-- \\ -->
-												<div class="clear"></div>
-											</div>
 											<!-- \\ advanced \\ -->
 											</div>
 											<footer class="search-footer">
-												<button class="srch-btn" type="submit">Search</button>
-												<span class="srch-lbl">Advanced Search options</span>
+												<button class="srch-btn" type="submit" style="float:right">Search</button>
 												<div class="clear"></div>
 											</footer>
 										</form>
@@ -693,67 +566,11 @@
 					<div class="clear"></div>
 
 					<!-- // advanced // -->
-					<div class="search-asvanced">
-						<!-- // -->
-						<div class="search-large-i">
-							<!-- // -->
-							<div class="srch-tab-line no-margin-bottom">
-								<div class="srch-tab-left">
-									<label>hotel stars</label>
-									<div class="input-a"><input type="text" value="" placeholder="--"></div>	
-								</div>
-								<div class="srch-tab-right">
-									<label>Price</label>
-									<div class="input-a"><input type="text" value="" placeholder="--"></div>	
-								</div>
-								<div class="clear"></div>
-							</div>
-							<!-- \\ -->							
-						</div>
-						<!-- \\ -->
-						<!-- // -->
-						<div class="search-large-i">
-							<!-- // -->
-							<div class="srch-tab-line no-margin-bottom">
-								<label>Property type</label>
-								<div class="select-wrapper">
-									<select class="custom-select">
-										<option>--</option>
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-									</select>
-								</div>	
-							</div>
-							<!-- \\ -->							
-						</div>
-						<!-- \\ -->
-						<!-- // -->
-						<div class="search-large-i">
-							<!-- // -->
-							<div class="srch-tab-line no-margin-bottom">
-								<label>Rating</label>
-								<div class="select-wrapper">
-									<select class="custom-select">
-										<option>--</option>
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-									</select>
-								</div>	
-							</div>
-							<!-- \\ -->								
-						</div>
-						<!-- \\ -->
-						<div class="clear"></div>	
-					</div>
+					
 					<!-- \\ advanced \\ -->
 					</div>
 					<footer class="search-footer">
 						<a href="#" class="srch-btn">Search</a>	
-						<span class="srch-lbl">Advanced Search options</span>
 						<div class="clear"></div>
 					</footer>
 				</div>

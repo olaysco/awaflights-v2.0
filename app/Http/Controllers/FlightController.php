@@ -52,7 +52,7 @@ class FlightController extends Controller
 		foreach ($json_response as $key => $value) {
  			$output .= '
                 <li class="dropdown-item airports" style="cursor:pointer; 
-                " role-c="'.$value->code.'" role-an="'.$value->airportName.'">'.$value->countryName.'-'.$value->airportName.'('.$value->code.')</li>
+                " role-c="'.$value->code.'" role-an="'.$value->airportName.'">('.$value->code.')'.$value->countryName.'-'.$value->airportName.'</li>
     			';
 		}
 		$output .='</ul>';

@@ -3,18 +3,23 @@ body{
 	overflow-x: hidden;
 }
 .page-search.full-width-search{
-	margin-top: -366px;
+	margin-top: -200px;
 }
 
 @media screen and (max-width: 800px){
 .page-search.full-width-search {
-    margin-top: -200px;
+    margin-top: 0px;
 }
+}
+@media screen and (max-width:700px){
+	.sm-none{
+		display:none;
+	}
 }
 @media screen and (max-width: 500px){
 	.header-logo img{
 		width:138px;
-		margin-top:13px;
+		margin-top: 1px;
 	}
 	.fixed .header-logo img {
     width: 90px;
@@ -156,7 +161,7 @@ ul.flight-search>li:hover{
 	background-color: #d2183bcc;
 	color:#fff;
 }
-.srch-tab-left, .srch-tab-right{
+.refine-search-form .srch-tab-left, .refine-search-form .srch-tab-right{
 	width: 100% !important;
 }
 .hide{
@@ -187,6 +192,7 @@ ul.flight-search>li:hover{
 	display: inline !important;
 	margin-bottom: 15px;
 }
+
 
 .refine-search-form .search-large-i{
 		width: 100% !important;
